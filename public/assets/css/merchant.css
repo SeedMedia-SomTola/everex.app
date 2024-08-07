@@ -8,7 +8,9 @@
 input:required {
     font-size: 13px;
 }
-
+select:focus, input:focus{
+    outline: none;
+}
 input,
 textarea,
 select,

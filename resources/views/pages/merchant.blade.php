@@ -18,7 +18,7 @@
                     @component('components.alert')
                     @endcomponent
 					<div class="form-group">
-						<input type="text" placeholder="@lang('register.first_name')" class="form-control " name="first_name" id="first_name" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autofocus autocomplete="off">
+						<input type="text" placeholder="@lang('register.first_name')" class="form-control" name="first_name" id="first_name" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autofocus >
 						<input type="text" placeholder="@lang('register.last_name')" class="form-control" name="last_name" id="last_name"  required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autocomplete="off">
 					</div>
 					<div class="form-wrapper">
