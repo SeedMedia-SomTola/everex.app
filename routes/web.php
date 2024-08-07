@@ -42,3 +42,4 @@ Route::post('/delivery',  [DeliveryController::class,'deliveryRegister']);
 Route::get('/solution',  [SolutionController::class,'index']);
 
 Route::get('locale/{lang}',  [LocalizationController::class,'setLocale'])->name('locale');
+
