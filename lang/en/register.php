@@ -5,7 +5,7 @@
         'last_name' => 'Last Name',
         'gender' => 'Gender',
         'phone_number' => 'Phone Number',
-        'delivery_experience' => 'Delivery Experince',
+        'delivery_experience' => 'Delivery Experience',
         'home_address' => 'Home Address',
         'male' => 'Male',
         'female' => 'Female',

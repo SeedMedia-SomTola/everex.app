@@ -26,9 +26,13 @@
 
         }
 
+        .title{
+            margin-top: -20px;
+        }
+
 
         .values a {
-            /* width: 250px; */
+            width: 250px;
             font-size: 18px;
             text-align: center;
             text-decoration: none;
@@ -56,7 +60,7 @@
 @section('content')
     <section class="hero section__text">
         <img src="https://www.foodpanda.com/wp-content/uploads/2023/02/about-foodpanda-1920x539.jpeg" alt="">
-        <div class="title mt-[-20px]">
+        <div class="title">
             <h2 data-aos="fade-right" class="leading-normal md:text-5xl text-2xl">About <br>
                 Everex Express</h2>
         </div>
@@ -65,8 +69,6 @@
     <section data-aos="fade-right" class="section__text lg:px-4 max-w-screen-xl sm:mx-auto md:py-8 pt-4 md:pt-0 md:my-0 w-full">
         <div class="content-width md:py-16 md:flex md:items-center">
                 <aside class=" p-4 md:p-0">
-                    <h2 class="md:text-5xl lg:pl-10 mb-4 text-3xl font-bold md:my-12 md:text-center">
-                        From food delivery to your daily convenience companion.</h2>
                     <p>@lang('about.title_one')</p>
                     <p>@lang('about.title_two')</p>
                     <p>@lang('about.title_three')</p>
@@ -219,20 +221,20 @@
 
             <ul class="">
                 <li class="mt-5 flex flex-row  text-center justify-center items-center">
-                    <a href="#" class="a-right text-white w-[220px] md:w-[250px]" data-aos="fade-right">@lang('about.speed')</a>
-                    <p class="text-md lg:text-xl md:ml-3" data-aos="fade-left">@lang('about.sub_speed')</p>
+                    <a href="#" class="a-right mr-3 ml-2 text-white" data-aos="fade-right">@lang('about.speed')</a>
+                    <p class="text-md lg:text-xl" data-aos="fade-left">@lang('about.sub_speed')</p>
                 </li>
                 <li class="mt-5 flex text-center justify-center items-center">
-                    <p class="text-md lg:text-xl md:mr-3" data-aos="fade-right">@lang('about.sub_efficiency')</p>
-                    <a href="#" class="a-left text-white w-[220px] md:w-[250px]" data-aos="fade-left">@lang('about.efficiency')</a>
+                    <p class="text-md lg:text-xl mr-3" data-aos="fade-right">@lang('about.sub_efficiency')</p> <a href="#"
+                        class="a-left mr-2 text-white" data-aos="fade-left">@lang('about.efficiency')</a>
                 </li>
                 <li class="mt-5 flex text-center justify-center items-center">
-                    <a href="#" class="a-right md:mr-3 text-white w-[220px] md:w-[250px]" data-aos="fade-right">@lang('about.excellence')</a>
+                    <a href="#" class="a-right mr-3 ml-2 text-white" data-aos="fade-right">@lang('about.excellence')</a>
                     <p class="text-md lg:text-xl" data-aos="fade-left">@lang('about.sub_excellence')</p>
                 </li>
                 <li class="mt-5 flex text-center justify-center items-center">
-                    <p class="text-md lg:text-xl md:mr-3" data-aos="fade-right">@lang('about.sub_dedication')</p>
-                    <a href="#" class="a-left text-white w-[220px] md:w-[250px]" data-aos="fade-left">@lang('about.dedication')</a>
+                    <p class="text-md lg:text-xl mr-3 " data-aos="fade-right">@lang('about.sub_dedication')</p> <a href="#"
+                        class="a-left mr-2 text-white" data-aos="fade-left">@lang('about.dedication')</a>
                 </li>
             </ul>
             {{-- <ul class="d-flex mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
@@ -339,9 +341,8 @@
                 <p class="my-6 font-normal text-gray-700 dark:text-gray-400">What makes quick commerce quick? We stand for
                     swift personalised delivery solutions for our customers, partners and employees. Learn how we empower
                     authentic lifestyles and drive innovation across the globe.</p>
-                <button type="button"
-                    class="my-6 focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Read
-                    our story</button>
+                <a href="{{ url('/merchant') }}" type="button"
+                    class="my-6 focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
             </div>
             <img data-aos="fade-left"
                 class="md:order-none lg:order-none order-1 object-cover w-full rounded-t-lg h-96 md:h-auto  "
