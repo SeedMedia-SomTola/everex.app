@@ -553,10 +553,10 @@
           </span>
         </div>
 
-        <div class="w-full inline-flex items-center justify-center values my-10">
+        <div class="w-full inline-flex items-center justify-center values my-10 ">
             <ul class="">
                 <li class="mt-5 flex flex-row  text-center justify-center items-center">
-                    <a href="#" class="a-right mr-3 ml-2 text-white" data-aos="fade-right">@lang('about.speed')</a>
+                    <a href="#" class="a-right mr-3 text-white" data-aos="fade-right">@lang('about.speed')</a>
                     <p class="text-md lg:text-xl" data-aos="fade-left">@lang('about.sub_speed')</p>
                 </li>
                 <li class="mt-5 flex text-center justify-center items-center">
@@ -568,8 +568,8 @@
                     <p class="text-md lg:text-xl" data-aos="fade-left">@lang('about.sub_excellence')</p>
                 </li>
                 <li class="mt-5 flex text-center justify-center items-center">
-                    <p class="text-md lg:text-xl mr-3 " data-aos="fade-right">@lang('about.sub_dedication')</p> <a href="#"
-                        class="a-left mr-2 text-white" data-aos="fade-left">@lang('about.dedication')</a>
+                    <p class="text-md lg:text-xl mr-3 " data-aos="fade-right">@lang('about.sub_dedication')</p>
+                    <a href="#" class="a-left text-white" data-aos="fade-left">@lang('about.dedication')</a>
                 </li>
             </ul>
           {{-- <ul class="d-flex mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">

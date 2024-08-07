@@ -13,14 +13,17 @@
 					<img src="{{ asset('assets/images/delivery/recruitment everex-01.jpg') }}" alt="">
 				</div>
 
-                <form action="">
+                <form method="POST" action="{{ route('deliverys.register') }}">
+                    @csrf
 					<h3>@lang('messages.delivery')</h3>
+                    @component('components.alert')
+                    @endcomponent
 					<div class="form-group">
-						<input type="text" placeholder="@lang('register.first_name') " class="form-control" required oninvalid="this.setCustomValidity('@lang('messages.fill')')">
-						<input type="text" placeholder="@lang('register.last_name') " class="form-control" required oninvalid="this.setCustomValidity('@lang('messages.fill')')">
+						<input type="text" placeholder="@lang('register.first_name') " class="form-control" name="first_name" id="first_name" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autofocus>
+						<input type="text" placeholder="@lang('register.last_name') " class="form-control" name="last_name" id="last_name" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autocomplete="off">
 					</div>
 					<div class="form-wrapper">
-						<select name="" id="" class="form-control" required>
+						<select name="gender" id="gender" class="form-control" required>
 							<option value="" disabled selected>@lang('register.gender')</option>
 							<option value="male">@lang('register.male')</option>
 							<option value="femal">@lang('register.female')</option>
@@ -29,15 +32,15 @@
 						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
 					</div>
 					<div class="form-wrapper">
-						<input type="phone_number" placeholder="@lang('register.phone_number')" class="form-control" required oninvalid="this.setCustomValidity('@lang('messages.fill')')">
+						<input type="phone_number" placeholder="@lang('register.phone_number')" class="form-control" name="phone_number" id="phone_number" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autocomplete="off">
 					</div>
 					<div class="form-wrapper">
-						<input type="delivery_experience" placeholder="@lang('register.delivery_experience')" class="form-control" required oninvalid="this.setCustomValidity('@lang('messages.fill')')">
+						<input type="delivery_experience" placeholder="@lang('register.delivery_experience')" name="delivery_experience" id="delivery_experience" class="form-control" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autocomplete="off">
 					</div>
 					<div class="form-wrapper">
-						<input type="home_address" placeholder="@lang('register.home_address')" class="form-control" required oninvalid="this.setCustomValidity('@lang('messages.fill')')">
+						<input type="home_address" placeholder="@lang('register.home_address')" name="home_address" id="home_address" class="form-control" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autocomplete="off">
 					</div>
-					<button class="btn-register">Register
+					<button class="btn-register tracking-normal">@lang('messages.btn')
 						<i class="zmdi zmdi-arrow-right"></i>
 					</button>
 				</form>

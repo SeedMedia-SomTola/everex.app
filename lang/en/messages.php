@@ -18,6 +18,7 @@
         'delivery Experience' => 'Delivery Experince',
         'home address' => 'Home Address',
 
-        'fill' => 'please fill out this field'
-
+        'fill' => 'please fill out this field',
+        'text' => 'Delivery Partner Registered Successfully. Wait Our Team Will Contact You later. Thank You For Register!',
+        'btn' => 'Register'
     ];

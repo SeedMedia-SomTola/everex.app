@@ -14,5 +14,4 @@
         'sub_title_four' => 'Benefit from our dedicated support team, available to assist you every step of the way.',
 
         'sub' => 'Subscribe Now',
-
     ];
