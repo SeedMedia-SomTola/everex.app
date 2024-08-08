@@ -103,7 +103,7 @@ a:hover {
 }
 
 .form-control {
-    border: 1px solid #333;
+    border-bottom: 1px solid #333;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -112,6 +112,11 @@ a:hover {
     height: 30px;
     padding: 0;
     margin-bottom: 25px;
+    outline: none;
+}
+
+.form-control:focus{
+    outline: none;
 }
 
 .form-control::-webkit-input-placeholder {

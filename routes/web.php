@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\AboutController;
-
+use App\Notifications\ExampleNotification;
 use Illuminate\Notifications\Notification;
 use App\Http\Controllers\PricingController;
 use App\Http\Controllers\DeliveryController;
@@ -33,12 +33,14 @@ Route::get('/about', [AboutController::class,'index']);
 Route::get('/news', [NewsController::class,'index']);
 Route::get('/pricing', [PricingController::class,'index']);
 Route::get('/merchant',  [MerchantController::class,'index'])->name('mercharts.register');
-// Route::post('/merchant', function(){
-//     Notification::route('telegram', '768856332')->notify(new Notification);
+// Route::post('merchart', function(){
+//     Notification::route('telegram', '768856332')->notify(new ExampleNotification);
 // });
 Route::post('/merchant', [MerchantController::class, 'register']);
+// Route::get('/bot/getupdates', [MerchantController::class,'teleUpdates']);
 Route::get('/delivery',  [DeliveryController::class,'index'])->name('deliverys.register');
 Route::post('/delivery',  [DeliveryController::class,'deliveryRegister']);
 Route::get('/solution',  [SolutionController::class,'index']);
 
 Route::get('locale/{lang}',  [LocalizationController::class,'setLocale'])->name('locale');
+
