@@ -674,7 +674,7 @@
                                                         1900 ៛
                                                     </td>
                                                     <td class="px-4 md:px-6 py-4 text-center">
-                                                        2900 ៛
+                                                        4000 ៛
                                                     </td>
                                                 </tr>
                                                 <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -688,7 +688,7 @@
                                                         2900 ៛
                                                     </td>
                                                     <td class="px-4 md:px-6 py-4 text-center">
-                                                        3900 ៛
+                                                        6000 ៛
                                                     </td>
                                                 </tr>
                                                 <tr class="bg-white dark:bg-gray-800">
@@ -702,7 +702,7 @@
                                                         3900 ៛
                                                     </td>
                                                     <td class="px-4 md:px-6 py-4 text-center">
-                                                        4900 ៛
+                                                        8000 ៛
                                                     </td>
                                                 </tr>
                                             </tbody>

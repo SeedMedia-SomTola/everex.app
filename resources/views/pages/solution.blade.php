@@ -51,6 +51,36 @@
             background: linear-gradient(90deg, rgb(29 78 216) 22%, rgb(239 68 68) 84%);
             clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 20% 99%, 0% 55%, 20% 0%);
         }
+        @keyframes underline {
+            from {
+                transform: scaleX(0);
+            }
+            to {
+                transform: scaleX(1);
+            }
+        }
+        .underline-animation {
+            display: inline-block;
+            position: relative;
+            color: red;
+            text-decoration: none;
+        }
+        .underline-animation::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: red;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+        .underline-animation:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
     </style>
 @endsection
 
@@ -171,18 +201,12 @@
 
     </section>
 
-    <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 my-10">
-        <div class="content-width md:py-1 md:flex md:items-center justify-center text-center">
-            <div
-                class="md:w-2/3 md:pr-8 lg:pr-16 mt-8 md:mt-0 order-1 flex flex-col items-start justify-center  md:order-0 ">
-                <aside class=" p-4 md:p-0">
-                    <h2 class="text-5xl font-bold my-12">Our Service.</h2>
-                    <p>A subsidiary of Delivery Hero, foodpanda launched in Singapore in 2014 as a food delivery platform.
-                        Dedicated to helping customers get their tasty favourites fast, it quickly won the hearts and minds
-                        of customers in APAC.</p>
-                </aside>
-            </div>
-        </div>
+
+    <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 my-10 px-4 text-center">
+        {{-- <a href="#" class="md:text-2xl text-3xl font-semibold text-center bg-red-500 px-8 py-5 rounded-[50px] hover:bg-transparent duration-300 border-2 border-red-500">@lang('home.sub')</a> --}}
+        <a href="{{ url('/merchant') }}" class="text-2xl uppercase tracking-wider text-red-600 bg-red-300 px-8 py-3 rounded-sm font-medium hover:text-red-800 underline-animation focus:outline-none focus:ring-2 focus:ring-red-400">
+            @lang('home.sub')
+        </a>
     </section>
 
 
