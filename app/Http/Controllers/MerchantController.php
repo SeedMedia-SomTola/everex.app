@@ -31,16 +31,20 @@ class MerchantController extends Controller
             'type_of_product' => $request->type_of_product,
             'avg_percel_day' => $request->avg_percel_day,
             'business_address' => $request->business_address,
-
-            // $text = "New Info".'\n'."Name".':'.$request->first_name.' '.$request->last_name.'\n'.$request->gender .'\n'.
-            //             $request->type_of_product .'\n'.$request->avg_percel_day.'\n'.$request->business_address,
-            // Telegram::sendMessage([
-            //     "chat_id"=>env('', ''),
-            //     "parse_mode" => "HTML",
-            //     "text"=>$text,
-            // ]),
-
         ]);
+
+        $text = "New Information From Business Partner Register\n"."\n".
+                    "Name". ' ' . ':' . ' '.$request->first_name.' '.$request->last_name."\n".
+                    'Gender'. ' ' . ':' . ' '.$request->gender ."\n".
+                    'Type of Product'. ' ' . ':' . ' '. $request->type_of_product ."\n".
+                    'Average'. ' ' . ':' . ' '. $request->avg_percel_day."\n".
+                    'Bussiness Address'. ' ' . ':' . ' '. $request->business_address;
+        Telegram::sendMessage([
+            "chat_id"=>env('TELEGRAM_CHAT_ID', ''),
+            "parse_mode" => "HTML",
+            "text"=>$text,
+        ]);
+
 
         return redirect()->route('mercharts.register')->with('success', 'Business Partner Registered Successfully. Please Waiting for Our Team Will Contact You Soon. Thank You For Register!');
     }

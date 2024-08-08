@@ -25,7 +25,7 @@
 						<select name="gender" id="gender" class="form-control focus:outline-none focus:ring-0 focus:border-gray-600" required>
 							<option value="" disabled selected>@lang('register.gender')</option>
 							<option value="male">@lang('register.male')</option>
-							<option value="femal">@lang('register.female')</option>
+							<option value="female">@lang('register.female')</option>
 							<option value="other">@lang('register.other')</option>
 						</select>
 						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
