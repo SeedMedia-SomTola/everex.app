@@ -45,7 +45,7 @@
 
   <section class="section__text m-section card max-w-screen-xl sm:mx-auto md:py-12 my-10 md:px-4">
         <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <div class="md:order-none lg:order-none order-2" data-aos="fade-right">
+            <div class="" data-aos="fade-right">
                 <h2 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl text-3xl">@lang('home.title_two')</h2>
                 <p class="my-6 font-normal text-gray-700 dark:text-gray-400">@lang('home.sub_title_two')</p>
                 <a href="{{ url('/merchant') }}" type="button" class="my-10 focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
