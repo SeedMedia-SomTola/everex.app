@@ -30,6 +30,10 @@
             margin-top: -20px;
         }
 
+        .values{
+            margin-bottom: 20px
+        }
+
 
         .values a {
             width: 250px;
@@ -259,94 +263,6 @@
             </ul> --}}
         </div>
 
-        <div id="default-styled-tab-content">
-            <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel"
-                aria-labelledby="profile-tab">
 
-                <div
-                    class=" grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto  "
-                        src="https://www.foodpanda.com/wp-content/uploads/2024/06/05_we-before-me__500x500.webp"
-                        alt="">
-                    <div class="flex items-center">
-                        <div>
-                            <h2 class="mb-2 md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white  text-3xl">
-                                we before me</h2>
-                            <p class="my-6 font-normal text-gray-700 dark:text-gray-400">Although we can make a difference
-                                individually, we will go further, accomplish more and touch more lives if we do it as one
-                                team and one organisation working towards our common goals.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel"
-                aria-labelledby="dashboard-tab">
-                <div
-                    class=" grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto  "
-                        src="https://www.foodpanda.com/wp-content/uploads/2024/06/05_we-before-me__500x500.webp"
-                        alt="">
-                    <div class="flex items-center">
-                        <div>
-                            <h2 class="mb-2 md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white text-3xl">we
-                                before me</h2>
-                            <p class="my-6 font-normal text-gray-700 dark:text-gray-400">Although we can make a difference
-                                individually, we will go further, accomplish more and touch more lives if we do it as one
-                                team and one organisation working towards our common goals.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel"
-                aria-labelledby="settings-tab">
-
-                <div
-                    class=" grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto  "
-                        src="https://www.foodpanda.com/wp-content/uploads/2024/06/04_challenge-the-status-quo__500x500.webp"
-                        alt="">
-                    <div class="flex items-center">
-                        <div>
-                            <h2 class="mb-2 md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white  text-3xl">
-                                we before me</h2>
-                            <p class="my-6 font-normal text-gray-700 dark:text-gray-400">Although we can make a difference
-                                individually, we will go further, accomplish more and touch more lives if we do it as one
-                                team and one organisation working towards our common goals.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel"
-                aria-labelledby="contacts-tab">
-                <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                        class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>.
-                    Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps
-                    classes to control the content visibility and styling.</p>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="section__text card-bottom max-w-screen-xl md:px-0 sm:mx-auto md:py-8 my-10 px-4 lg:px-4">
-        <div
-            class="grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-            <div data-aos="fade-right" class="md:order-none lg:order-none order-2">
-                <h2 class="mb-2  md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white  text-3xl">Noteworthy
-                    technology acquisitions 2021</h2>
-                <p class="my-6 font-normal text-gray-700 dark:text-gray-400">What makes quick commerce quick? We stand for
-                    swift personalised delivery solutions for our customers, partners and employees. Learn how we empower
-                    authentic lifestyles and drive innovation across the globe.</p>
-                <a href="{{ url('/merchant') }}" type="button"
-                    class="my-10 focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
-            </div>
-            <img data-aos="fade-left"
-                class="md:order-none lg:order-none order-1 object-cover w-full rounded-t-lg h-96 md:h-auto  "
-                src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg" alt="">
-        </div>
     </section>
 @endsection

@@ -5,6 +5,9 @@ module.exports = {
     "./resources/**/*.vue",
     "./node_modules/flowbite/**/*.js"
   ],
+  variants: {
+    outline: ["focus"],
+  },
 
   theme: {
     screens: {
