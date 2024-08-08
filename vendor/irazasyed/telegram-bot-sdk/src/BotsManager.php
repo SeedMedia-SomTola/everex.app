@@ -25,6 +25,7 @@ final class BotsManager
      */
     public function __construct(private array $config)
     {
+        $this->config = $config;
     }
 
     /**

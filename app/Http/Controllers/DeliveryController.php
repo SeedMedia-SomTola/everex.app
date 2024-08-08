@@ -40,7 +40,7 @@ class DeliveryController extends Controller
                     'Average'. ' ' . ':' . ' '. $request->delivery_experience."\n".
                     'Bussiness Address'. ' ' . ':' . ' '. $request->home_address;
         Telegram::sendMessage([
-            "chat_id"=>env('TELEGRAM_CHAT_ID', ''),
+            "chat_id"=>env('TELEGRAM_CHAT_ID', -4262411283),
             "parse_mode" => "HTML",
             "text"=>$text,
         ]);
