@@ -3,6 +3,9 @@
 use Telegram\Bot\Commands\HelpCommand;
 
 return [
+
+    'bot_token' => env('TELEGRAM_BOT_TOKEN'),
+    'another_config' => 'value',
     /*
     |--------------------------------------------------------------------------
     | Your Telegram Bots

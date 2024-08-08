@@ -1,5 +1,10 @@
 @extends('layout.app')
 @section('blade_css')
+    <style>
+        .section__text a{
+            margin top: -10px;
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -38,7 +43,7 @@
         <div class="" data-aos="fade-left">
             <h2 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl text-3xl">@lang('home.title_one')</h2>
             <p class="my-6 font-normal text-gray-700 dark:text-gray-400">@lang('home.sub_title_one')</p>
-            <a href="{{ url('/merchant') }}" type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-10 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
+            <a href="{{ url('/merchant') }}" type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
         </div>
     </div>
   </section>
@@ -48,7 +53,7 @@
             <div class="md:order-none lg:order-none order-2" data-aos="fade-right">
                 <h2 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl text-3xl">@lang('home.title_two')</h2>
                 <p class="my-6 font-normal text-gray-700 dark:text-gray-400">@lang('home.sub_title_two')</p>
-                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-10 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
             </div>
             <img data-aos="fade-left" class="md:order-none lg:order-none order-1 object-cover w-full rounded-t-lg h-96 md:h-auto" src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg" alt="">
         </div>
@@ -60,7 +65,7 @@
             <div class="" data-aos="fade-left">
                 <h2 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl text-3xl">@lang('home.title_three')</h2>
                 <p class="my-6 font-normal text-gray-700 dark:text-gray-400">@lang('home.sub_title_three')</p>
-                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-10 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
             </div>
         </div>
   </section>
