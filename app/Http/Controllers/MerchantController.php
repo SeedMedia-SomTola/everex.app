@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use app;
 use App\Models\Merchant;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use Telegram\Bot\BotsManager;
 use App\Http\Requests\StoreMessage;
+use App\Http\Controllers\Controller;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
 class MerchantController extends Controller
@@ -33,19 +35,19 @@ class MerchantController extends Controller
             'avg_percel_day' => $request->avg_percel_day,
             'business_address' => $request->business_address,
         ]);
-
-        // $text = "New Information From Business Partner Register\n"."\n".
-        //             "Name". ' ' . ':' . ' '.$request->first_name.' '.$request->last_name."\n".
-        //             'Gender'. ' ' . ':' . ' '.$request->gender ."\n".
-        //             'Type of Product'. ' ' . ':' . ' '. $request->type_of_product ."\n".
-        //             'Average'. ' ' . ':' . ' '. $request->avg_percel_day."\n".
-        //             'Bussiness Address'. ' ' . ':' . ' '. $request->business_address;
-        // Telegram::sendMessage([
-        //     "telegram_bot_token"=>env('TELEGRAM_BOT_TOKEN', '7488110118:AAF1yYnZwMivBG4iaNE-KkLm_o1BlDKbDcQ'),
-        //     "chat_id"=>env('TELEGRAM_CHAT_ID', -4262411283),
-        //     "parse_mode" => "HTML",
-        //     "text"=>$text,
-        // ]);
+        
+        $text = "New Information From Business Partner Register\n"."\n".
+                    "Name". ' ' . ':' . ' '.$request->first_name.' '.$request->last_name."\n".
+                    'Gender'. ' ' . ':' . ' '.$request->gender ."\n".
+                    'Type of Product'. ' ' . ':' . ' '. $request->type_of_product ."\n".
+                    'Average'. ' ' . ':' . ' '. $request->avg_percel_day."\n".
+                    'Bussiness Address'. ' ' . ':' . ' '. $request->business_address;
+        Telegram::sendMessage([
+            "telegram_bot_token"=>env('TELEGRAM_BOT_TOKEN', '7488110118:AAF1yYnZwMivBG4iaNE-KkLm_o1BlDKbDcQ'),
+            "chat_id"=>env('TELEGRAM_CHAT_ID', -4262411283),
+            "parse_mode" => "HTML",
+            "text"=>$text,
+        ]);
 
 
         return redirect()->route('mercharts.register')->with('success', 'Business Partner Registered Successfully. Please Waiting for Our Team Will Contact You Soon. Thank You For Register!');
