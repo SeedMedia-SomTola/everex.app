@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Merchant;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreMessage;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
 class MerchantController extends Controller

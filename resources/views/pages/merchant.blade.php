@@ -17,11 +17,11 @@
                     @component('components.alert')
                     @endcomponent
 					<div class="form-group">
-						<input type="text" placeholder="@lang('register.first_name')" class="form-control focus:outline-none focus:ring-0 focus:border-gray-600" name="first_name" id="first_name" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autofocus >
-						<input type="text" placeholder="@lang('register.last_name')" class="form-control focus:outline-none focus:ring-0 focus:border-gray-600" name="last_name" id="last_name"  required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autocomplete="off">
+						<input type="text" placeholder="@lang('register.first_name')" class="form-control text-sm focus:outline-none focus:ring-0 focus:border-gray-600" name="first_name" id="first_name" value="{{ old('first_name') }}" autofocus >
+						<input type="text" placeholder="@lang('register.last_name')" class="form-control text-sm focus:outline-none focus:ring-0 focus:border-gray-600" name="last_name" id="last_name"  value="{{ old('last_name') }}" autocomplete="off">
 					</div>
 					<div class="form-wrapper">
-						<select name="gender" id="gender" class="form-control focus:outline-none focus:ring-0 focus:border-gray-600" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" >
+						<select name="gender" id="gender" class="form-control text-sm focus:outline-none focus:ring-0 focus:border-gray-600" >
 							<option value="" disabled selected>@lang('register.gender')</option>
 							<option value="male">@lang('register.male')</option>
 							<option value="female">@lang('register.female')</option>
@@ -30,13 +30,13 @@
 						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
 					</div>
 					<div class="form-wrapper">
-						<input type="text" placeholder="@lang('register.type_of_product')" class="form-control focus:outline-none focus:ring-0 focus:border-gray-600" name="type_of_product" id="type_of_product" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autocomplete="off">
+						<input type="text" placeholder="@lang('register.type_of_product')" class="form-control text-sm focus:outline-none focus:ring-0 focus:border-gray-600" name="type_of_product" id="type_of_product" value="{{ old('type_of_product') }}" autocomplete="off">
                     </div>
 					<div class="form-wrapper">
-						<input type="text" placeholder="@lang('register.average')" class="form-control focus:outline-none focus:ring-0 focus:border-gray-600" name="avg_percel_day" id="avg_percel_day" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autocomplete="off">
+						<input type="text" placeholder="@lang('register.average')" class="form-control text-sm focus:outline-none focus:ring-0 focus:border-gray-600" name="avg_percel_day" id="avg_percel_day" value="{{ old('average') }}" autocomplete="off">
 					</div>
 					<div class="form-wrapper">
-						<input type="text" placeholder="@lang('register.business_address')" name="business_address" id="business_address" class="form-control focus:outline-none focus:ring-0 focus:border-gray-600" required oninvalid="this.setCustomValidity('@lang('messages.fill')')" autocomplete="off">
+						<input type="text" placeholder="@lang('register.business_address')" name="business_address" id="business_address" class="form-control text-sm focus:outline-none focus:ring-0 focus:border-gray-600" value="{{ old('business_address') }}" autocomplete="off">
 					</div>
 					<button class="btn-register tracking-normal">@lang('messages.btn')
 						<i class="zmdi zmdi-arrow-right"></i>

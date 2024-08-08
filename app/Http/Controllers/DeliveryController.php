@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreMessage;
 use App\Models\Delivery;
 use Illuminate\Http\Request;
 use Telegram\Bot\Laravel\Facades\Telegram;
