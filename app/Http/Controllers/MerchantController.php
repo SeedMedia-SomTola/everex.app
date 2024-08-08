@@ -41,6 +41,7 @@ class MerchantController extends Controller
         //             'Average'. ' ' . ':' . ' '. $request->avg_percel_day."\n".
         //             'Bussiness Address'. ' ' . ':' . ' '. $request->business_address;
         // Telegram::sendMessage([
+        //     "telegram_bot_token"=>env('TELEGRAM_BOT_TOKEN', '7488110118:AAF1yYnZwMivBG4iaNE-KkLm_o1BlDKbDcQ'),
         //     "chat_id"=>env('TELEGRAM_CHAT_ID', -4262411283),
         //     "parse_mode" => "HTML",
         //     "text"=>$text,

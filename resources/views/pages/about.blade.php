@@ -72,7 +72,7 @@
 
     <section data-aos="fade-right" class="section__text lg:px-4 max-w-screen-xl sm:mx-auto md:py-8 pt-4 md:pt-0 md:my-0 w-full">
         <div class="content-width md:py-16 md:flex md:items-center">
-                <aside class=" p-4 md:p-0">
+                <aside class="mt-10 p-4 md:p-0">
                     <p>@lang('about.title_one')</p>
                     <p>@lang('about.title_two')</p>
                     <p>@lang('about.title_three')</p>
