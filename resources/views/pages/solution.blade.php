@@ -59,34 +59,12 @@
                 transform: scaleX(1);
             }
         }
-        .underline-animation {
-            display: inline-block;
-            position: relative;
-            color: red;
-            text-decoration: none;
-        }
-        .underline-animation::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            background-color: red;
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease;
-        }
-        .underline-animation:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
     </style>
 @endsection
 
 @section('content')
     <section class="hero section__text">
-        <img src="{{ asset('assets/images/delivery/solutions.jpg') }}" alt="">
+        <img src="{{ asset('assets/images/delivery/solutions.jpg') }}" alt="" class="w-full">
         <div class="title">
             <div class="section__text" data-aos="fade-right">
                 <h2 class="leading-normal text-3xl md:text-5xl">Solutions <br>
@@ -204,7 +182,7 @@
 
     <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 my-10 px-4 text-center">
         {{-- <a href="#" class="md:text-2xl text-3xl font-semibold text-center bg-red-500 px-8 py-5 rounded-[50px] hover:bg-transparent duration-300 border-2 border-red-500">@lang('home.sub')</a> --}}
-        <a href="{{ url('/merchant') }}" class="text-2xl uppercase tracking-wider text-red-600 bg-red-300 px-8 py-3 rounded-sm font-medium hover:text-red-800 underline-animation focus:outline-none focus:ring-2 focus:ring-red-400">
+        <a href="{{ url('/merchant') }}" class="text-2xl tracking-wider text-white bg-red-500 px-8 py-3 rounded-lg font-medium hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400">
             @lang('home.sub')
         </a>
     </section>

@@ -28,7 +28,7 @@
 
 
         <section data-aos="fade-up" class="my-4">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 max-w-screen-xl mx-auto md:px-4 justify-center md:flex-nowrap gap-2">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 max-w-screen-xl mx-auto md:px-4 justify-center md:flex-nowrap gap-4">
                 <div class="w-full max-w-xs sm:max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                     <h5 class="mb-4 text-xl font-medium text-red-500 dark:text-red-700">Free</h5>
                     <div class="flex items-baseline text-gray-900 dark:text-white">
