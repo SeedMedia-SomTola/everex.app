@@ -93,10 +93,10 @@
                 <div id="dropdownNavbar" class="z-10 hidden  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                     <ul class="py-2 text-sm text-white-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                     <li>
-                        <a href="{{ url('/merchant') }}" class="block px-4 py-2 hover:bg-red-700 hover:text-white">@lang('messages.merchant')</a>
+                        <a href="{{ url('/merchant') }}" class="block px-4 py-2">@lang('messages.merchant')</a>
                     </li>
                     <li>
-                        <a href="{{ url('/delivery') }}" class="block px-4 py-2 hover:bg-red-700 hover:text-white">@lang('messages.delivery')</a>
+                        <a href="{{ url('/delivery') }}" class="block px-4 py-2">@lang('messages.delivery')</a>
                     </li>
 
                 </div>

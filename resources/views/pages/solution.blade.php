@@ -59,6 +59,13 @@
                 transform: scaleX(1);
             }
         }
+
+        .section__text .card p{
+            height: 130px;
+        }
+        .section__text .card .section_h{
+            height: 50px;
+        }
     </style>
 @endsection
 
@@ -94,19 +101,16 @@
         </div>
 
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 mt-10">
-            <div class="max-w-md mx-auto bg-white border border-gray-300 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                </a>
+            <div class="card bg-white border border-gray-300 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
                 <div class="p-5">
                     <div class="text-center">
                         <i class="fa-solid fa-truck-fast mb-5 text-3xl md:text-4xl text-red-500"></i>
                     </div>
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.speed')</h5>
+                        <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.speed')</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center py-3">@lang('solution.sub_speed')</p>
-                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center justify-center w-full text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         @lang('solution.get_start')
                         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -114,19 +118,16 @@
                     </a>
                 </div>
             </div>
-            <div class="max-w-sm mx-auto bg-white border border-gray-300 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                </a>
+            <div class="card bg-white border border-gray-300 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
                 <div class="p-5">
                     <div class="text-center">
                         <i class="fa-solid fa-handshake mb-5 text-red-500 text-3xl md:text-4xl"></i>
                     </div>
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.reliability')</h5>
+                        <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.reliability')</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center py-3">@lang('solution.sub_reliability')</p>
-                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center justify-center w-full text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         @lang('solution.get_start')
 
                         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -135,19 +136,16 @@
                     </a>
                 </div>
             </div>
-            <div class="max-w-sm mx-auto bg-white border border-gray-300 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                </a>
+            <div class="card bg-white border border-gray-300 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
                 <div class="p-5">
                     <div class="text-center">
                         <i class="fa-solid fa-money-bill-wave mb-5 text-red-500 text-3xl md:text-4xl"></i>
                     </div>
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.affordability')</h5>
+                        <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.affordability')</h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center py-3">@lang('solution.sub_affordability')</p>
-                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center justify-center w-full text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <p class="mb-3 h-[130px] font-normal text-gray-700 dark:text-gray-400 text-center py-3">@lang('solution.sub_affordability')</p>
+                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         @lang('solution.get_start')
                         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -155,19 +153,16 @@
                     </a>
                 </div>
             </div>
-            <div class="max-w-sm mx-auto bg-white border border-gray-300 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
-                <a href="#">
-                    <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                </a>
+            <div class="card bg-white border border-gray-300 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
                 <div class="p-5">
                     <div class="text-center">
                         <i class="fa-solid fa-handshake-angle mb-5 text-red-500 text-3xl md:text-4xl"></i>
                     </div>
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.customer_support')</h5>
+                        <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.customer_support')</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center py-3">@lang('solution.sub_customer_support')</p>
-                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center justify-center w-full text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         @lang('solution.get_start')
                         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -180,11 +175,8 @@
     </section>
 
 
-    <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 my-10 px-4 text-center">
-        {{-- <a href="#" class="md:text-2xl text-3xl font-semibold text-center bg-red-500 px-8 py-5 rounded-[50px] hover:bg-transparent duration-300 border-2 border-red-500">@lang('home.sub')</a> --}}
-        <a href="{{ url('/merchant') }}" class="text-2xl tracking-wider text-white bg-red-500 px-8 py-3 rounded-lg font-medium hover:text-red-800 focus:outline-none focus:ring-2 focus:ring-red-400">
-            @lang('home.sub')
-        </a>
+    <section data-aos="fade-up" class="max-w-screen-xl sm:mx-auto md:py-8 my-16 px-4 text-center">
+        <a href="{{ url('/merchant') }}" class="bg-red-500 py-5 px-8 text-xl rounded-xl hover:bg-red-700 hover:text-white">@lang('home.sub')</a>
     </section>
 
 
@@ -411,7 +403,6 @@
 
 
       </div>
-
   </section> --}}
 
     <section data-aos="fade-up" class="section__text about-carousel max-w-screen-xl sm:mx-auto md:py-8 my-10 lg:px-4">
