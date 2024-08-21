@@ -2,6 +2,9 @@
 
 @section('blade_css')
     <link rel="stylesheet" href="{{ asset('assets/css/merchant.css') }}">
+    <style>
+        
+    </style>
 @endsection
 
 @section('content')
