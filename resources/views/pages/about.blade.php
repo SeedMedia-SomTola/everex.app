@@ -12,29 +12,22 @@
             font-size: 1.1rem;
             font-weight: bold
         }
-
         .taps .d-flex {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-
         }
-
         .taps li {
             padding: 0 15px;
 
         }
-
         .title{
             margin-top: -20px;
         }
-
         .values{
             margin-bottom: 20px
         }
-
-
         .values a {
             width: 250px;
             font-size: 18px;
@@ -46,23 +39,26 @@
             background-color: red;
             transition: 0.5s;
         }
-
         .values .a-right {
             background: rgb(210,0,19);
             background: linear-gradient(90deg, rgb(239 68 68) 42%, rgb(29 78 216) 84%);
             clip-path: polygon(80% 0%, 100% 50%, 80% 100%, 0% 100%, 10% 55%, 0% 0%);
         }
-
         .values .a-left {
             background: rgb(210,0,19);
             background: linear-gradient(90deg, rgb(29 78 216) 22%, rgb(239 68 68) 84%);
             clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 20% 99%, 0% 55%, 20% 0%);
         }
+        @media screen and (min-width: 700px) {
+            .hero{
+                margin-top: 70px
+            }
+        }
     </style>
 @endsection
 
 @section('content')
-    <section class="hero section__text md:pt-[50px]">
+    <section class="hero section__text">
         <img src="https://www.foodpanda.com/wp-content/uploads/2023/02/about-foodpanda-1920x539.jpeg" alt="" class="w-full">
         <div class="title">
             <h2 data-aos="fade-right" class="leading-normal md:text-5xl text-2xl">About <br>
