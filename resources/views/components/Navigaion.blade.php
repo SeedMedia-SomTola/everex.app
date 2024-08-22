@@ -1,5 +1,4 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 @section('blade_js')
     <script src="{{ asset('assets/js/changeLang.js') }}"></script>
 @endsection
@@ -7,6 +6,10 @@
 <style>
         ul li .new:hover{
             color: rgb(229, 107, 107);
+        }
+        .section_dropdown:hover{
+            background: rgb(229, 107, 107);
+            color: white;
         }
         @media screen and (max-width: 760px){
             .active{
@@ -107,10 +110,10 @@
                 <div id="dropdownNavbar" class="z-10 hidden  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                     <ul class="py-2 text-sm text-white-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                         <li>
-                            <a href="{{ url('/merchant') }}" class="block px-4 py-2">@lang('messages.merchant')</a>
+                            <a href="{{ url('/merchant') }}" class="block section_dropdown px-4 py-2">@lang('messages.merchant')</a>
                         </li>
                         <li>
-                            <a href="{{ url('/delivery') }}" class="block px-4 py-2">@lang('messages.delivery')</a>
+                            <a href="{{ url('/delivery') }}" class="block section_dropdown px-4 py-2">@lang('messages.delivery')</a>
                         </li>
                     </ul>
                 </div>
@@ -121,6 +124,17 @@
 </nav>
 
 <script>
+    // var btnContainer = document.getElementById("myDIV");
+    // var btns = btnContainer.getElementsByClassName("btn");
+
+    // for (var i = 0; i < btns.length; i++) {
+    //     btns[i].addEventListener("click", function() {
+    //         var current = document.getElementsByClassName("active");
+    //         current[0].className = current[0].className.replace(" active", "");
+    //         this.className += " active";
+    //     });
+    // }
+
     $(document).ready(function() {
         $("ul li a").click(function () {
             $("li a").removeClass("active");
