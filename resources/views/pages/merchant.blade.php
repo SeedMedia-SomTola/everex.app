@@ -4,21 +4,19 @@
     <link rel="stylesheet" href="{{ asset('assets/css/merchant.css') }}">
     <style>
         .wrapper {
-            min-height: 108vh;
-            margin-top: 30px;
+            min-height: 96vh;
+            margin-top: 20px;
             background-size: cover;
-            /* background-position: center; */
             background-repeat: no-repeat;
             display: flex;
             align-items: center;
-            /* margin-left: -15px; */
         }
 
-        @media screen and (max-width:1120px){
+        /* @media screen and (max-width:1120px){
             .wrapper {
                 min-height: 113vh;
             }
-        }
+        } */
     </style>
 @endsection
 @section('content')
