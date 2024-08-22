@@ -4,23 +4,20 @@
     <link rel="stylesheet" href="{{ asset('assets/css/merchant.css') }}">
     <style>
         .wrapper {
-            min-height: 96vh;
-            margin-top: 20px;
+            min-height: 98vh;
+            margin-top: 44px;
             background-size: cover;
             background-repeat: no-repeat;
             display: flex;
             align-items: center;
         }
-
-        /* @media screen and (max-width:1120px){
-            .wrapper {
-                min-height: 113vh;
-            }
+        /* .section_wrapper{
+            padding: 10px 0;
         } */
     </style>
 @endsection
 @section('content')
-    <section class="w-full mx-auto md:py-8">
+    <section class="w-full mx-auto section_wrapper ">
 		<div class="wrapper" style="background-image: url({{ asset('assets/images/merchant/bg-registration-form-1.jpg') }});">
 			<div class="inner">
 				<div class="image-holder">
