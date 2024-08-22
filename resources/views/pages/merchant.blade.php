@@ -2,6 +2,16 @@
 
 @section('blade_css')
     <link rel="stylesheet" href="{{ asset('assets/css/merchant.css') }}">
+    <style>
+        .wrapper {
+            min-height: 110vh;
+            margin-top: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+        }
+    </style>
 @endsection
 @section('content')
     <section class="w-full mx-auto md:py-8">
