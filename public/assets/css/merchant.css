@@ -40,15 +40,6 @@ a:hover {
     outline: none;
 }
 
-.wrapper {
-    min-height: 110vh;
-    margin-top: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-}
-
 .inner {
     padding: 20px;
     background: #fff;

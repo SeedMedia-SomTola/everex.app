@@ -66,6 +66,9 @@
         .section__text .card .section_h{
             height: 50px;
         }
+        aside p{
+            padding: 0 20px;
+        }
     </style>
 @endsection
 
