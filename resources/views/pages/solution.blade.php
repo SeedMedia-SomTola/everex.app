@@ -82,8 +82,7 @@
 
     <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 md:pt-8 md:my-0 w-full ">
         <div class="content-width md:py-16 md:flex md:items-center justify-center text-center">
-            <div
-                class="md:w-2/3 md:pr-8 lg:pr-16 mt-8 md:mt-0 order-1 flex flex-col items-start justify-center  md:order-0 ">
+            <div class="md:w-2/3 md:pr-8 lg:pr-16 mt-8 md:mt-0 order-1 flex flex-col items-start justify-center  md:order-0 ">
                 <aside class=" p-4 md:p-0">
                     <h2 class="md:text-5xl text-3xl font-bold md:my-12 my-8">@lang('solution.headline')</h2>
                     <h3 class="md:text-2xl text-xl font-bold md:my-5 my-3">@lang('solution.subheadline')</h3>

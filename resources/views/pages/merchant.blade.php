@@ -3,7 +3,6 @@
 @section('blade_css')
     <link rel="stylesheet" href="{{ asset('assets/css/merchant.css') }}">
 @endsection
-
 @section('content')
     <section class="w-full mx-auto md:py-8">
 		<div class="wrapper" style="background-image: url({{ asset('assets/images/merchant/bg-registration-form-1.jpg') }});">
