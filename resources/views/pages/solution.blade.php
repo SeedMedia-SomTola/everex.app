@@ -110,7 +110,7 @@
                         <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.speed')</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center py-3">@lang('solution.sub_speed')</p>
-                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-red-500 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-red-500 dark:hover:bg-red-700 dark:focus:ring-red-800">
                         @lang('solution.get_start')
                         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -127,9 +127,8 @@
                         <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.reliability')</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center py-3">@lang('solution.sub_reliability')</p>
-                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-red-500 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-red-500 dark:hover:bg-red-700 dark:focus:ring-red-800">
                         @lang('solution.get_start')
-
                         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                         </svg>
@@ -145,7 +144,7 @@
                         <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.affordability')</h5>
                     </a>
                     <p class="mb-3 h-[130px] font-normal text-gray-700 dark:text-gray-400 text-center py-3">@lang('solution.sub_affordability')</p>
-                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-red-500 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-red-500 dark:hover:bg-red-700 dark:focus:ring-red-800">
                         @lang('solution.get_start')
                         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -162,7 +161,7 @@
                         <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 dark:text-white text-center">@lang('solution.customer_support')</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-center py-3">@lang('solution.sub_customer_support')</p>
-                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-red-500 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-red-500 dark:hover:bg-red-700 dark:focus:ring-red-800">
                         @lang('solution.get_start')
                         <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
