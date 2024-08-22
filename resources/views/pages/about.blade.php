@@ -62,8 +62,8 @@
 @endsection
 
 @section('content')
-    <section class="hero section__text">
-        <img src="https://www.foodpanda.com/wp-content/uploads/2023/02/about-foodpanda-1920x539.jpeg" alt="">
+    <section class="hero section__text md:pt-[50px]">
+        <img src="https://www.foodpanda.com/wp-content/uploads/2023/02/about-foodpanda-1920x539.jpeg" alt="" class="w-full">
         <div class="title">
             <h2 data-aos="fade-right" class="leading-normal md:text-5xl text-2xl">About <br>
                 Everex Express</h2>
