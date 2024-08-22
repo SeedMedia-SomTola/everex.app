@@ -54,6 +54,11 @@
                 margin-top: 70px
             }
         }
+        @media screen and (min-width: 1024px) {
+            .section_padding{
+                padding: 0 50px;
+            }
+        }
     </style>
 @endsection
 
@@ -66,7 +71,7 @@
         </div>
     </section>
 
-    <section data-aos="fade-right" class="section__text lg:px-4 max-w-screen-xl sm:mx-auto md:py-8 pt-4 md:pt-0 md:my-0 w-full">
+    <section data-aos="fade-right" class="section__text section_padding lg:px-4 max-w-screen-xl sm:mx-auto md:py-8 pt-4 md:pt-0 md:my-0 w-full">
         <div class="content-width md:py-16 md:flex md:items-center">
                 <aside class="mt-10 p-4 md:p-0">
                     <p>@lang('about.title_one')</p>
