@@ -3,7 +3,14 @@
 @section('blade_css')
     <link rel="stylesheet" href="{{ asset('assets/css/merchant.css') }}">
     <style>
-        
+        .wrapper {
+            min-height: 105vh;
+            margin-top: 30px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+        }
     </style>
 @endsection
 
