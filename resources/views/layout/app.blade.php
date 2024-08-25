@@ -45,6 +45,7 @@
     @yield('content')
     @include('components.footer')
     @include('components.scroll_top')
+    @include('components.chat')
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
