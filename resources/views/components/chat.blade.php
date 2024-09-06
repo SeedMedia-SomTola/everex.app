@@ -1,215 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Modal</title>
-    <link href="auto.css" rel="stylesheet">
-    <script defer src="app.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        *,
-        *::after,
-        *::before {
-            box-sizing: border-box;
-        }
-
-        .btn-message {
-            position: fixed;
-            bottom: 14px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            color: #fff;
-            background: red;
-            border-radius: 50%
-        }
-
-        .modal {
-            position: fixed;
-            top: 70%;
-            left: 80%;
-            transform: translate(-50%, -50%) scale(0);
-            transition: 200ms ease-in-out;
-            border: 1px solid black;
-            border-radius: 10px;
-            z-index: 10;
-            background-color: white;
-            width: 370px;
-            max-width: 80%;
-        }
-
-        .modal.active {
-            transform: translate(-50%, -50%) scale(1);
-        }
-
-        .modal-header {
-            padding: 10px 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid black;
-        }
-
-        .modal-header .title {
-            font-size: 1.25rem;
-            font-weight: bold;
-        }
-
-        .modal-header .close-button {
-            cursor: pointer;
-            border: none;
-            outline: none;
-            background: none;
-            font-size: 2.25rem;
-            font-weight: bold;
-        }
-
-        .modal-body {
-            padding: 10px 15px;
-        }
-
-        .modal-body img{
-            padding: 12px 5px;
-            border: 1px solid red;
-            border-radius: 50%
-        }
-        .modal-body p{
-            margin-top: -10px;
-        }
-        /* .modal-body .text-run::after{
-            content: '';
-            position: absolute;
-            left: 0;
-            height: 100%;
-            height: 10px;
-            width: 100%;
-            border-left: 2px solid red;
-            animation: typing 1.5s steps(10) infinite;
-        }
-
-        @keyframes typing{
-            100% {
-                left: 100%;
-                margin: 0 -35px 0 35px;
-            }
-        } */
-
-        #overlay {
-            position: fixed;
+<style>
+    @keyframes fadeInUpRight {
+        0% {
+            transform: translate(100%, 100%);
             opacity: 0;
-            transition: 200ms ease-in-out;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, .5);
-            pointer-events: none;
         }
 
-        #overlay.active {
+        100% {
+            transform: translate(0, 0);
             opacity: 1;
-            pointer-events: all;
+        }
+    }
+
+    @keyframes fadeOutUpRight {
+        0% {
+            transform: translate(0, 0);
+            opacity: 1;
         }
 
-        .btn {
-            padding: 10px 15px;
+        100% {
+            transform: translate(100%, 100%);
+            opacity: 0;
         }
+    }
 
-        .btn button {
-            margin-top: 30px;
-            padding: 10px 5px;
-            width: 48%;
+    .fade-in-up-right {
+        animation: fadeInUpRight 0.5s ease-out;
+    }
+
+    .fade-out-up-right {
+        animation: fadeOutUpRight 0.5s ease-in;
+    }
+
+    @media screen and (max-width: 360px) {
+        #popup {
+            right: 0;
         }
+    }
 
-        .text-message{
-            margin-left: 40px;
-        }
+    .logo_img img{
+        padding: 12px 5px;
+        border: 1px solid #f03a40;
+        border-radius: 50%
+    }
 
-        @media screen and (max-width: 767px) {
-            .modal {
-                top: 60%;
-                left: 50%;
-            }
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 1023px){
-            .modal {
-                top: 60%;
-                left: 75%;
-            }
-        }
-        @media screen and (min-width: 1024px){
-            .modal {
-                top: 60%;
-                left: 80%;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <button class="btn-message" data-modal-target="#modal"><i class="fa-solid fa-message"></i></button>
-    <div class="modal" id="modal">
-        <div class="modal-header">
-            <div class="title"> <img src="{{ asset('assets/images/logo/Logo_white.png') }}" alt="" width="130" class=""></div>
-            <button data-close-button class="close-button">&times;</button>
-        </div>
-        <div class="modal-body relative">
-            <img src="{{ asset('assets/images/logo/Logo_white.png') }}" alt="" width="40" class="">
-            <p class="bg-gray-300 rounded-xl p-3 text-message"><span class="text-run">Hi there👋</span> <br>
-                How can I help you?</p>
-        </div>
-
-        <div class="btn">
-            <button class="bg-blue-500 rounded-md"><i class="fa-brands fa-telegram me-3"></i>Telegram</button>
-            <button class="bg-red-500 rounded-md"><i class="fa-solid fa-phone me-3"></i>Call</button>
+</style>
+<!-- Message -->
+<div id="popup"
+    class="fixed bottom-24 right-5 bg-white border shadow-lg p-6 mx-auto max-w-[330px] sm:max-w-sm w-full hidden z-50 rounded-lg">
+    <div class="border-b">
+        <div class="flex justify-between items-center mb-4 pb-2">
+            <h2 class="text-[15px] md:text-xl font-semibold tracking-wider text-[#edbeb7]">
+                <img src="{{ url('assets/images/logo/Logo_white.png') }}" alt="" class="w-20">
+            </h2>
+            <button id="closePopup" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
         </div>
     </div>
-    <div id="overlay"></div>
+    <div id="time" class="text-md text-center font-semibold text-gray-800 py-2"></div>
+    <div class="flex logo_img">
+        <img src="{{ url('assets/images/logo/Logo_white.png') }}" alt="logo" class="" width="40">
+        <div id="loadingDots" class="flex space-x-2 justify-center items-center bg-white bg-opacity-0 ms-3 mt-3">
+            <div class="h-2 w-2 bg-[#f03a40] rounded-full animate-bounce [animation-delay:-0.3s]"></div>
+            <div class="h-2 w-2 bg-[#f03a40] rounded-full animate-bounce [animation-delay:-0.15s]"></div>
+            <div class="h-2 w-2 bg-[#f03a40] rounded-full animate-bounce"></div>
+        </div>
+    </div>
+    <div id="resultMessage" class="ml-9 px-5 py-3 -mt-2 rounded-lg text-[14px] md:text-[17px] text-gray-200 tracking-wider">
+        <p id="resultMessageOne" class="result-message"></p>
+        <p id="resultMessageTwo" class="result-message"></p>
+    </div>
 
-    <script>
-        const openModalButtons = document.querySelectorAll('[data-modal-target]')
-        const closeModalButtons = document.querySelectorAll('[data-close-button]')
-        const overlay = document.getElementById('overlay')
+    <div class="flex justify-be mt-7">
+        <button type="button"
+            class="w-full text-[14px] md:text-[16px] tracking-wider focus:outline-none text-gray-200 bg-[#f03a40] hover:tracking-widest transition-all duration-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg py-2.5 me-2 mb-2"><i
+                class="fa-brands fa-telegram me-2"></i>Telegram</button>
+        <button type="button"
+            class="w-full text-[14px] md:text-[16px] tracking-wider focus:outline-none text-gray-200 bg-[#6e3999] hover:tracking-widest transition-all duration-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg py-2.5 me-2 mb-2"><i
+                class="fa-solid fa-phone me-2"></i>Call</button>
+    </div>
+</div>
 
-        openModalButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const modal = document.querySelector(button.dataset.modalTarget)
-                openModal(modal)
-            })
-        })
+<!-- Button -->
+<button id="btn_toggle"
+    class="fixed bottom-[18px] right-6 px-4 py-3 rounded-full z-50 bg-[#f03a40] text-white shadow-lg hover:bg-[#f03a40] focus:outline-none">
+    <i class="fa-regular fa-message"></i>
+</button>
 
-        overlay.addEventListener('click', () => {
-            const modals = document.querySelectorAll('.modal.active')
-            modals.forEach(modal => {
-                closeModal(modal)
-            })
-        })
+<script>
+    // pop up
+    const popup = document.getElementById('popup');
+    const toggleButton = document.getElementById('btn_toggle');
+    const closeButton = document.getElementById('closePopup');
 
-        closeModalButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const modal = button.closest('.modal')
-                closeModal(modal)
-            })
-        })
-
-        function openModal(modal) {
-            if (modal == null) return
-            modal.classList.add('active')
-            overlay.classList.add('active')
+    toggleButton.addEventListener('click', function() {
+        if (popup.classList.contains('hidden')) {
+            popup.classList.remove('hidden');
+            popup.classList.add('fade-in-up-right');
+            popup.classList.remove('fade-out-up-right');
+        } else {
+            popup.classList.add('fade-out-up-right');
+            setTimeout(() => popup.classList.add('hidden'), 500);
         }
+    });
 
-        function closeModal(modal) {
-            if (modal == null) return
-            modal.classList.remove('active')
-            overlay.classList.remove('active')
-        }
-    </script>
-</body>
+    closeButton.addEventListener('click', function() {
+        popup.classList.add('fade-out-up-right');
+        setTimeout(() => popup.classList.add('hidden'), 500);
+    });
 
-</html>
+
+    // dot animated
+    document.getElementById('btn_toggle').addEventListener('click', function() {
+        const loadingDots = document.getElementById('loadingDots');
+        const resultMessageOne = document.getElementById('resultMessageOne');
+        const resultMessageTwo = document.getElementById('resultMessageTwo');
+
+        loadingDots.style.display = 'flex';
+        resultMessageOne.textContent = '';
+        resultMessageTwo.textContent = '';
+        resultMessage.style.background = '';
+
+
+        setTimeout(function() {
+            loadingDots.style.display = 'none';
+            resultMessage.style.background = 'gray';
+            resultMessageOne.textContent = 'Hi there👋.';
+            resultMessageTwo.textContent = 'How can I help you?';
+        }, 2000);
+    });
+
+    // time
+    function formatTime(date) {
+        let hours = date.getHours();
+        let minutes = date.getMinutes();
+        let ampm = hours >= 12 ? 'PM' : 'AM';
+
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+
+        return `${hours}:${minutes} ${ampm}`;
+    }
+    const now = new Date();
+    const formattedTime = formatTime(now);
+    document.getElementById('time').innerText = formattedTime;
+</script>

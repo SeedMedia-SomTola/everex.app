@@ -88,11 +88,11 @@
                 <!-- Item 1 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <a href="#"
-                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200">
                         <div class=" mx-4">
-                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 ">Noteworthy
                                 technology acquisitions 2021</h2>
-                            <p class="my-6 mx-4 font-normal text-gray-700 dark:text-gray-400 hidden md:grid">What makes quick commerce quick?
+                            <p class="my-6 mx-4 font-normal text-gray-700 hidden md:grid">What makes quick commerce quick?
                                 We
                                 stand for swift personalised delivery solutions for our customers, partners and employees.
                                 Learn how we empower authentic lifestyles and drive innovation across the globe.</p>
@@ -101,15 +101,14 @@
                             src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg"
                             alt="">
                     </a>
-                    {{-- <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> --}}
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <a href="#"
-                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  ">
                         <div class="mx-4">
-                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 ">Noteworthy
                                 technology acquisitions 2021</h2>
-                            <p class="my-6 font-normal text-gray-700 dark:text-gray-400 hidden md:grid">What makes quick commerce quick?
+                            <p class="my-6 font-normal text-gray-700 hidden md:grid">What makes quick commerce quick?
                                 We
                                 stand for swift personalised delivery solutions for our customers, partners and employees.
                                 Learn how we empower authentic lifestyles and drive innovation across the globe.</p>
@@ -118,15 +117,14 @@
                             src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg"
                             alt="">
                     </a>
-                    {{-- <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> --}}
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <a href="#"
-                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  ">
                         <div class="mx-4">
-                            <h2 class="mb-2  text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            <h2 class="mb-2  text-5xl font-bold tracking-tight text-gray-900">Noteworthy
                                 technology acquisitions 2021</h2>
-                            <p class="my-6 mx-4 font-normal text-gray-700 dark:text-gray-400 hidden md:grid">What makes quick commerce quick?
+                            <p class="my-6 mx-4 font-normal text-gray-700 hidden md:grid">What makes quick commerce quick?
                                 We
                                 stand for swift personalised delivery solutions for our customers, partners and employees.
                                 Learn how we empower authentic lifestyles and drive innovation across the globe.</p>
@@ -135,15 +133,14 @@
                             src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg"
                             alt="">
                     </a>
-                    {{-- <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> --}}
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <a href="#"
-                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200 ">
                         <div class="mx-4">
-                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900">Noteworthy
                                 technology acquisitions 2021</h2>
-                            <p class="my-6 mx-4 font-normal text-gray-700 dark:text-gray-400 hidden md:grid">What makes quick commerce quick?
+                            <p class="my-6 mx-4 font-normal text-gray-700 hidden md:grid">What makes quick commerce quick?
                                 We stand for swift personalised delivery solutions for our customers, partners and
                                 employees. Learn how we empower authentic lifestyles and drive innovation across the globe.
                             </p>
@@ -152,15 +149,14 @@
                             src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg"
                             alt="">
                     </a>
-                    {{-- <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> --}}
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <a href="#"
-                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200 ">
                         <div class="mx-4">
-                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900">Noteworthy
                                 technology acquisitions 2021</h2>
-                            <p class="my-6 font-normal text-gray-700 dark:text-gray-400 hidden md:grid">What makes quick commerce quick?
+                            <p class="my-6 font-normal text-gray-700 hidden md:grid">What makes quick commerce quick?
                                 We stand for swift personalised delivery solutions for our customers, partners and
                                 employees. Learn how we empower authentic lifestyles and drive innovation across the globe.
                             </p>
@@ -169,7 +165,6 @@
                             src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg"
                             alt="">
                     </a>
-                    {{-- <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> --}}
                 </div>
             </div>
             <!-- Slider indicators -->
@@ -190,8 +185,8 @@
                 class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev>
                 <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M5 1 1 5l4 4" />
@@ -203,8 +198,8 @@
                 class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-next>
                 <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true"
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
@@ -242,28 +237,6 @@
                         class="a-left mr-2 text-white" data-aos="fade-left">@lang('about.dedication')</a>
                 </li>
             </ul>
-            {{-- <ul class="d-flex mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
-                <li class="me-2 mb-4" role="presentation">
-                    <button class="inline-block text-red-700 hover:text-white hover:bg-red-800  focus:outline-none focus:border-gray-900 focus:bg-gray-900 focus:text-white font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 " id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">start with customer, end with customer</button>
-                </li>
-                <li class="me-2 mb-4" role="presentation">
-                    <button class="inline-block text-red-700 hover:text-white hover:bg-red-800  focus:outline-none focus:border-gray-900 focus:bg-gray-900 focus:text-white font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">prioritise, decide, deliver</button>
-                </li>
-                <li class="me-2 mb-4" role="presentation">
-                    <button class="inline-block text-red-700 hover:text-white hover:bg-red-800  focus:outline-none focus:border-gray-900 focus:bg-gray-900 focus:text-white font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">own it end-to-end</button>
-                </li>
-                <li class="me-2 mb-4" role="presentation">
-                    <button class="inline-block text-red-700 hover:text-white hover:bg-red-800  focus:outline-none focus:border-gray-900 focus:bg-gray-900 focus:text-white font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">challenge the status quo</button>
-                </li>
-                <li class="me-2 mb-5" role="presentation">
-                    <button class="inline-block text-red-700 hover:text-white hover:bg-red-800  focus:outline-none focus:border-gray-900 focus:bg-gray-900 focus:text-white font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">we before me</button>
-                </li>
-                <li class="me-2 mb-5" role="presentation">
-                    <button class="inline-block text-red-700 hover:text-white hover:bg-red-800  focus:outline-none focus:border-gray-900 focus:bg-gray-900 focus:text-white font-medium rounded-xl text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600" id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">plan for tomorrow, focus on today</button>
-                </li>
-            </ul> --}}
         </div>
-
-
     </section>
 @endsection
