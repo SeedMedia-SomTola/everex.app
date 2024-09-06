@@ -26,7 +26,7 @@
 
     .drawer.open {
         transform: translateX(0);
-        transition: transform 0.5s ease;
+        transition: transform 0.7s ease;
     }
 
     .overlay {

@@ -32,7 +32,7 @@
     @yield('blade_js')
 
     <style>
-        body{
+        body {
             font-family: "Noto Sans Khmer", sans-serif;
             overflow-x: hidden;
         }

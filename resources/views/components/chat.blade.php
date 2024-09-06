@@ -43,6 +43,15 @@
         border-radius: 50%
     }
 
+    #btn_toggle{
+        background: #f03a40;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 16px;
+        right: 20px;
+    }
+
 </style>
 <!-- Message -->
 <div id="popup"
@@ -85,8 +94,8 @@
 </div>
 
 <!-- Button -->
-<button id="btn_toggle"
-    class="fixed bottom-[18px] right-6 px-4 py-3 rounded-full z-50 bg-[#f03a40] text-white shadow-lg hover:bg-[#f03a40] focus:outline-none">
+<button id="btn_toggle" type="button"
+    class="px-4 py-3 rounded-full z-50 text-white shadow-lg hover:bg-[#f03a40] focus:outline-none">
     <i class="fa-regular fa-message"></i>
 </button>
 
