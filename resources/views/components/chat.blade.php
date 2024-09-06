@@ -78,7 +78,7 @@
             <div class="h-2 w-2 bg-[#f03a40] rounded-full animate-bounce"></div>
         </div>
     </div>
-    <div id="resultMessage" class="ml-9 px-5 py-3 -mt-2 rounded-lg text-[14px] md:text-[17px] text-gray-200 tracking-wider">
+    <div id="resultMessage" class="ml-9 px-5 py-3 -mt-2 rounded-lg text-[12px] md:text-[14px] text-gray-200 tracking-wider">
         <p id="resultMessageOne" class="result-message"></p>
         <p id="resultMessageTwo" class="result-message"></p>
     </div>
