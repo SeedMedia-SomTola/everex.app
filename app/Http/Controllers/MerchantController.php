@@ -35,7 +35,7 @@ class MerchantController extends Controller
             'avg_percel_day' => $request->avg_percel_day,
             'business_address' => $request->business_address,
         ]);
-        
+
         $text = "New Information From Business Partner Register\n"."\n".
                     "Name". ' ' . ':' . ' '.$request->first_name.' '.$request->last_name."\n".
                     'Gender'. ' ' . ':' . ' '.$request->gender ."\n".

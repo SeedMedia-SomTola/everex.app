@@ -29,43 +29,35 @@
   </section>
 
   <section class="section__text m-section card max-w-screen-xl sm:mx-auto md:py-12 my-10 md:px-4">
-    {{-- <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-      <img data-aos="fade-right" class="object-cover w-full rounded-t-lg h-96 md:h-auto" src="https://www.foodpanda.com/wp-content/uploads/2023/02/fp-home.jpg" alt="">
-      <div data-aos="fade-left" class="">
-          <h2 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl text-3xl">@lang('home.title_one')</h2>
-          <p class="my-6 font-normal text-gray-700 dark:text-gray-400">@lang('home.sub_title_one')</p>
-          <a href="{{ url('/merchant') }}" type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
-      </div>
-    </div> --}}
-    <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200">
         <img data-aos="fade-right" class="object-cover w-full rounded-t-lg h-96 md:h-auto" src="https://www.foodpanda.com/wp-content/uploads/2023/02/fp-home.jpg" alt="">
 
         <div class="" data-aos="fade-right">
-            <h2 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl text-3xl">@lang('home.title_one')</h2>
-            <p class="my-6 font-normal text-gray-700 dark:text-gray-400">@lang('home.sub_title_one')</p>
-            <a href="{{ url('/merchant') }}" type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
+            <h2 class="mb-2 font-bold tracking-tight text-gray-900 md:text-5xl text-3xl">@lang('home.title_one')</h2>
+            <p class="my-6 font-normal text-gray-700">@lang('home.sub_title_one')</p>
+            <a href="{{ url('/merchant') }}" type="button" class="focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2">@lang('home.sub')</a>
         </div>
     </div>
   </section>
 
   <section class="section__text m-section card max-w-screen-xl sm:mx-auto md:py-12 my-10 md:px-4">
-        <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200">
             <div class="md:order-none lg:order-none order-2" data-aos="fade-right">
-                <h2 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl text-3xl">@lang('home.title_two')</h2>
-                <p class="my-6 font-normal text-gray-700 dark:text-gray-400">@lang('home.sub_title_two')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="section_link focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
+                <h2 class="mb-2 font-bold tracking-tight text-gray-900 md:text-5xl text-3xl">@lang('home.title_two')</h2>
+                <p class="my-6 font-normal text-gray-700 ">@lang('home.sub_title_two')</p>
+                <a href="{{ url('/merchant') }}" type="button" class="section_link focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2">@lang('home.sub')</a>
             </div>
             <img data-aos="fade-right" class="md:order-none lg:order-none order-1 object-cover w-full rounded-t-lg h-96 md:h-auto" src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg" alt="">
         </div>
   </section>
 
   <section class="section__text m-section card max-w-screen-xl sm:mx-auto md:py-12 my-10 md:px-4">
-        <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200">
             <img data-aos="fade-right" class="object-cover w-full rounded-t-lg h-96 md:h-auto" src="https://www.foodpanda.com/wp-content/uploads/2023/04/jason-goodman-Oalh2MojUuk-unsplash-1024x683.jpg" alt="">
             <div class="" data-aos="fade-right">
-                <h2 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl text-3xl">@lang('home.title_three')</h2>
-                <p class="my-6 font-normal text-gray-700 dark:text-gray-400">@lang('home.sub_title_three')</p>
-                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
+                <h2 class="mb-2 font-bold tracking-tight text-gray-900 md:text-5xl text-3xl">@lang('home.title_three')</h2>
+                <p class="my-6 font-normal text-gray-700">@lang('home.sub_title_three')</p>
+                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2">@lang('home.sub')</a>
             </div>
         </div>
   </section>
@@ -105,16 +97,16 @@
       </div>
       <!-- Slider controls -->
       <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+              <svg class="w-4 h-4 text-whitertl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
               </svg>
               <span class="sr-only">Previous</span>
           </span>
       </button>
       <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white">
+              <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
               </svg>
               <span class="sr-only">Next</span>
@@ -126,11 +118,11 @@
 
 
   <section class="section__text m-section card max-w-screen-xl sm:mx-auto md:py-12 my-10 md:px-4">
-        <div class=" grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+        <div class=" grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200">
             <div class="" data-aos="fade-right">
-                <h2 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl text-3xl">@lang('home.title_four')</h2>
-                <p class="my-6 font-normal text-gray-700 dark:text-gray-400">@lang('home.sub_title_four')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="my-10 focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">@lang('home.sub')</a>
+                <h2 class="mb-2 font-bold tracking-tight text-gray-900 md:text-5xl text-3xl">@lang('home.title_four')</h2>
+                <p class="my-6 font-normal text-gray-700">@lang('home.sub_title_four')</p>
+                <a href="{{ url('/merchant') }}" type="button" class="my-10 focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 ">@lang('home.sub')</a>
             </div>
             <img data-aos="fade-right" class="object-cover w-full rounded-t-lg h-96 md:h-auto " src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-3.jpg" alt="">
         </div>

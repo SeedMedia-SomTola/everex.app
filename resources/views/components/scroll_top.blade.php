@@ -40,7 +40,7 @@
 
         .btn-scroll-top {
             opacity: 0;
-            background-color: #f00;
+            background-color: #f03a40;
             color: #f8e3e3;
             border-radius: 50%;
             border: none;
