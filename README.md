@@ -1,1 +1,1 @@
-everex.app
+www.everex.app
