@@ -794,16 +794,16 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="{{url('assets/images/delivery/content_1.jpg')}}" alt="" class="w-full object-center object-cover">
+                    <img src="{{url('assets/images/delivery/content_1.jpg')}}" alt="" class="w-full h-full object-center object-cover">
                 </div>
                 <div class="swiper-slide">
-                    <img src="{{url('assets/images/delivery/content_2.jpg')}}" alt="" class="w-full object-center object-cover">
+                    <img src="{{url('assets/images/delivery/content_2.jpg')}}" alt="" class="w-full h-full object-center object-cover">
                 </div>
                 <div class="swiper-slide">
-                    <img src="{{url('assets/images/delivery/content_3.jpg')}}" alt="" class="w-full object-center object-cover">
+                    <img src="{{url('assets/images/delivery/content_3.jpg')}}" alt="" class="w-full h-full object-center object-cover">
                 </div>
                 <div class="swiper-slide">
-                    <img src="{{url('assets/images/delivery/content_4.jpg')}}" alt="" class="w-full object-center object-cover">
+                    <img src="{{url('assets/images/delivery/content_4.jpg')}}" alt="" class="w-full h-full object-center object-cover">
                 </div>
             </div>
         </div>

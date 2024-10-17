@@ -11,7 +11,7 @@
     <section class="hero">
         <div id="default-carousel" class="relative 2xl:mt-[5rem]" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative h-[46vh] overflow-hidden md:h-[93vh] grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <div class="relative h-[50vh] overflow-hidden md:h-[93vh] grid grid-cols-1 gap-6 sm:grid-cols-3">
                 <!-- Item 1 -->
                 <div class="duration-700 ease-in-out flex flex-col justify-center items-center md:p-[10rem] overflow-hidden" data-carousel-item>
                     <div class="absolute inset-0 flex justify-center items-center">
@@ -88,49 +88,49 @@
         </div>
     </section>
 
-    <section class="max-w-screen-xl sm:mx-auto md:py-12 my-10 md:px-4">
-        <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 p-3">
-            <img data-aos="fade-right" class="object-contain object-center w-full rounded-lg h-[24rem]" src="{{url('assets/images/sdd.jpg')}}" alt="">
+    <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
+        <div class="sm:mx-4 grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
+            <img data-aos="fade-right" class="object-cover object-center w-full rounded-lg h-[24rem]" src="{{url('assets/images/sdd.jpg')}}" alt="">
 
             <div class="" data-aos="fade-right">
                 <h2 class="mb-2 font-bold tracking-tight text-gray-900 md:text-5xl text-3xl">@lang('home.title_one')</h2>
                 <p class="my-6 font-normal text-gray-700">@lang('home.sub_title_one')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class="focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2">@lang('home.sub')</a>
             </div>
         </div>
     </section>
 
-    <section class="max-w-screen-xl sm:mx-auto md:py-12 my-10 md:px-4">
-        <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 p-3">
+    <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
+        <div class="sm:mx-4 grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
             <div class="md:order-none lg:order-none order-2" data-aos="fade-right">
                 <h2 class="mb-2 font-bold tracking-tight text-gray-900 md:text-5xl text-3xl">@lang('home.title_two')</h2>
                 <p class="my-6 font-normal text-gray-700 ">@lang('home.sub_title_two')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="section_link focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class="section_link focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2">@lang('home.sub')</a>
             </div>
-            <img data-aos="fade-right" class="object-contain object-center w-full rounded-lg h-[26rem]" src="{{url('assets/images/aps.jpg')}}" alt="">
+            <img data-aos="fade-right" class="object-cover object-center w-full rounded-lg h-[26rem]" src="{{url('assets/images/aps.jpg')}}" alt="">
         </div>
     </section>
 
-    <section class="max-w-screen-xl sm:mx-auto md:py-12 my-10 md:px-4">
-        <div class="sm:mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 p-3">
-            <img data-aos="fade-right" class="object-contain object-center w-full rounded-lg h-[24rem]" src="{{url('assets/images/real_time_trackings.jpg')}}" alt="">
+    <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
+        <div class="sm:mx-4 grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
+            <img data-aos="fade-right" class="object-cover object-center w-full rounded-lg h-[24rem]" src="{{url('assets/images/real_time_trackings.jpg')}}" alt="">
             <div class="" data-aos="fade-right">
                 <h2 class="mb-2 font-bold tracking-tight text-gray-900 md:text-5xl text-3xl">@lang('home.title_three')</h2>
                 <p class="my-6 font-normal text-gray-700">@lang('home.sub_title_three')</p>
-                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2">@lang('home.sub')</a>
             </div>
         </div>
     </section>
 
 
-    <section class="max-w-screen-xl sm:mx-auto md:py-12 my-10 md:px-4">
-        <div class=" grid grid-cols-1 gap-6 sm:grid-cols-2 p-3">
+    <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
+        <div class=" grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
             <div class="" data-aos="fade-right">
                 <h2 class="mb-2 font-bold tracking-tight text-gray-900 md:text-5xl text-3xl">@lang('home.title_four')</h2>
                 <p class="my-6 font-normal text-gray-700">@lang('home.sub_title_four')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="my-10 focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 ">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class="px-3 py-2 focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm ">@lang('home.sub')</a>
             </div>
-            <img data-aos="fade-right" class="object-contain object-center w-full rounded-lg h-[24rem] max-sm:order-first" src="{{url('assets/images/rcsupport.jpg')}}" alt="">
+            <img data-aos="fade-right" class="object-cover object-center w-full rounded-lg h-[24rem] max-sm:order-first" src="{{url('assets/images/rcsupport.jpg')}}" alt="">
         </div>
     </section>
 @endsection

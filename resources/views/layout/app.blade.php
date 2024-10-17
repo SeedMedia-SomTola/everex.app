@@ -59,9 +59,22 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             watchSlidesProgress: true,
-            slidesPerView: 3,
             loop:true,
             grabCursor: true,
+            breakpoints: {
+                // When the window is >= 320px (mobile)
+                320: {
+                    slidesPerView: 1, // Show 1 slide
+                },
+                // When the window is >= 768px (tablet)
+                768: {
+                    slidesPerView: 2, // Show 2 slides
+                },
+                // When the window is >= 1024px (desktop)
+                1024: {
+                    slidesPerView: 3, // Show 3 slides
+                },
+            },
         });
     </script>
 </body>
