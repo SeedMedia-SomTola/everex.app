@@ -11,7 +11,7 @@
     <section class="hero">
         <div id="default-carousel" class="relative 2xl:mt-[5rem]" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div class="relative h-[50vh] overflow-hidden md:h-[93vh] grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <div class="relative h-[55vh] overflow-hidden md:h-[93vh] grid grid-cols-1 gap-6 sm:grid-cols-3">
                 <!-- Item 1 -->
                 <div class="duration-700 ease-in-out flex flex-col justify-center items-center md:p-[10rem] overflow-hidden" data-carousel-item>
                     <div class="absolute inset-0 flex justify-center items-center">
