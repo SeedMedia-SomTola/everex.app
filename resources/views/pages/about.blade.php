@@ -65,11 +65,6 @@
 @section('content')
     <section class="hero section__text">
         <img src="{{url('assets/images/about_us_hero_banner.jpg')}}" alt="" class="w-full">
-        <div class="absolute bg-black/30 inset-0" data-aos="fade-down"></div>
-        <div class="title">
-            <h2 data-aos="fade-right" class="leading-normal md:text-5xl text-2xl">About <br>
-                Everex Express</h2>
-        </div>
     </section>
 
     <section data-aos="fade-right" class="section__text section_padding lg:px-4 max-w-screen-xl sm:mx-auto md:py-8 pt-4 md:pt-0 md:my-0 w-full">

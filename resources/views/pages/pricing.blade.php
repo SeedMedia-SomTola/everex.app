@@ -28,8 +28,8 @@
 
 
         <section data-aos="fade-up" class="my-4">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 max-w-screen-xl mx-auto md:px-4 justify-center md:flex-nowrap gap-4">
-                <div class="w-full max-w-xs sm:max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
+            <div class="grid grid-cols-12 max-w-screen-xl mx-auto md:px-4 justify-center items-center gap-4">
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
                     <h5 class="mb-4 text-xl font-medium text-red-500 ">Free</h5>
                     <div class="flex items-baseline text-gray-900">
                         <span class="text-2xl font-semibold text-red-700">$</span>
@@ -231,7 +231,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="w-full max-w-xs sm:max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
                     <h5 class="mb-4 text-xl font-medium text-red-500 ">Basic</h5>
                     <div class="flex items-baseline text-gray-900 ">
                         <span class="text-2xl font-semibold text-red-700">$</span>
@@ -422,7 +422,7 @@
                     </ul>
 
                 </div>
-                <div class="w-full max-w-xs sm:max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
                     <h5 class="mb-4 text-xl font-medium text-red-500 ">Standard</h5>
                     <div class="flex items-baseline text-gray-900 ">
                         <span class="text-2xl font-semibold text-red-700">$</span>
@@ -607,7 +607,7 @@
                     </ul>
 
                 </div>
-                <div class="w-full max-w-xs sm:max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
                     <h5 class="mb-4 text-xl font-medium text-red-500 ">Premium</h5>
                     <div class="flex items-baseline text-gray-900">
                         <span class="text-2xl font-semibold text-red-700">$</span>
@@ -789,5 +789,23 @@
                 </div>
             </div>
         </section>
+    </section>
+    <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{url('assets/images/delivery/content_1.jpg')}}" alt="" class="w-full object-center object-cover">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{url('assets/images/delivery/content_2.jpg')}}" alt="" class="w-full object-center object-cover">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{url('assets/images/delivery/content_3.jpg')}}" alt="" class="w-full object-center object-cover">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{url('assets/images/delivery/content_4.jpg')}}" alt="" class="w-full object-center object-cover">
+                </div>
+            </div>
+        </div>
     </section>
 @endsection

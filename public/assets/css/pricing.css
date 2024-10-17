@@ -75,7 +75,7 @@ img {
 }
 
 body {
-    
+
     background: #F6F5FA;
 }
 
@@ -312,7 +312,7 @@ p.description {
     font-size: 16px;
     margin-bottom: 16px;
 } */
-/* 
+/*
 li.op-hidden {
     opacity: .3;
 }
@@ -386,3 +386,24 @@ background: var(--greay-color);
         grid-template-columns: 1fr;
     }
 }
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    height: 100%;
+    line-height: 300px;
+    text-align: center;
+    animation: auto-scroll 20s infinite linear;
+}
+
+@keyframes auto-scroll {
+    0{
+        transform:translateX(0);
+    }
+    100%{
+       transform: translateX(-100%);
+    }
+}
+

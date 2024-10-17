@@ -75,12 +75,12 @@
 @section('content')
     <section class="hero section__text">
         <img src="{{ asset('assets/images/delivery/solutions.jpg') }}" alt="" class="w-full">
-        <div class="title">
-            <div class="section__text" data-aos="fade-right">
-                <h2 class="leading-normal text-3xl md:text-5xl">Solutions <br>
-                    Everex Express</h2>
-            </div>
-        </div>
+{{--        <div class="title">--}}
+{{--            <div class="section__text" data-aos="fade-right">--}}
+{{--                <h2 class="leading-normal text-3xl md:text-5xl">Solutions <br>--}}
+{{--                    Everex Express</h2>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </section>
 
     <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 md:pt-8 md:my-0 w-full ">

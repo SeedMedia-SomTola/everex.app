@@ -78,17 +78,17 @@
             <div class="h-2 w-2 bg-[#f03a40] rounded-full animate-bounce"></div>
         </div>
     </div>
-    <div id="resultMessage" class="ml-9 px-5 py-3 -mt-2 rounded-lg text-[12px] md:text-[14px] text-gray-200 tracking-wider">
+    <div id="resultMessage" class="ml-9 px-5 py-3 -mt-2 rounded-lg text-[12px] md:text-[14px] text-gray-400 tracking-wider">
         <p id="resultMessageOne" class="result-message"></p>
         <p id="resultMessageTwo" class="result-message"></p>
     </div>
 
     <div class="flex justify-be mt-7">
         <button type="button"
-            class="w-full text-[14px] md:text-[16px] tracking-wider focus:outline-none text-gray-200 bg-[#f03a40] hover:tracking-widest transition-all duration-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg py-2.5 me-2 mb-2"><i
+            class="w-full text-[14px] md:text-[16px] tracking-wider focus:outline-none text-white bg-[#f03a40] hover:tracking-widest transition-all duration-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg py-2.5 me-2 mb-2"><i
                 class="fa-brands fa-telegram me-2"></i>Telegram</button>
         <button type="button"
-            class="w-full text-[14px] md:text-[16px] tracking-wider focus:outline-none text-gray-200 bg-[#6e3999] hover:tracking-widest transition-all duration-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg py-2.5 me-2 mb-2"><i
+            class="w-full text-[14px] md:text-[16px] tracking-wider focus:outline-none text-white bg-[#6e3999] hover:tracking-widest transition-all duration-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg py-2.5 me-2 mb-2"><i
                 class="fa-solid fa-phone me-2"></i>Call</button>
     </div>
 </div>
@@ -136,7 +136,7 @@
 
         setTimeout(function() {
             loadingDots.style.display = 'none';
-            resultMessage.style.background = 'gray';
+            resultMessage.classList.add('shadow-md');
             resultMessageOne.textContent = 'Hi there👋.';
             resultMessageTwo.textContent = 'How can I help you?';
         }, 2000);

@@ -25,6 +25,8 @@
     {{-- sweet alert --}}
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.1/dist/sweetalert2.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -52,6 +54,16 @@
     </script>
     <script src="{{ url('assets/js/changeLang.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            watchSlidesProgress: true,
+            slidesPerView: 3,
+            loop:true,
+            grabCursor: true,
+        });
+    </script>
 </body>
 
 </html>
