@@ -5,7 +5,7 @@
     <style>
         .wrapper {
             min-height: 98vh;
-            margin-top: 44px;
+            margin-top: 60px;
             background-size: cover;
             background-repeat: no-repeat;
             display: flex;

@@ -15,7 +15,7 @@
 @endsection
 
 @section('content')
-    <section class="w-full mx-auto md:py-8">
+    <section class="w-full mx-auto md:pt-8">
 		<div class="wrapper" style="background-image: url({{ asset('assets/images/delivery/bg_register_delivery_1.jpg') }});">
 			<div class="inner">
 				<div class="image-holder">

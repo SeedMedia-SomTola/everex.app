@@ -63,12 +63,12 @@
 @endsection
 
 @section('content')
-    <section class="hero section__text">
-        <img src="{{url('assets/images/about_us_hero_banner.jpg')}}" alt="" class="w-full">
-    </section>
+        <div class="w-full mt-[5.7rem]">
+            <img src="{{url('assets/images/about_us_hero_banner_laptop.jpg')}}" alt="" class="w-full object-contain object-center">
+        </div>
 
     <section data-aos="fade-right" class="section__text section_padding lg:px-4 max-w-screen-xl sm:mx-auto md:py-8 pt-4 md:pt-0 md:my-0 w-full">
-        <div class="content-width md:py-16 md:flex md:items-center">
+        <div class="content-width md:py-7 md:flex md:items-center">
                 <aside class="mt-10 p-4 md:p-0">
                     <p>@lang('about.title_one')</p>
                     <p>@lang('about.title_two')</p>
@@ -77,10 +77,10 @@
         </div>
     </section>
 
-    <section  class="section__text taps md:mt-16 max-w-screen-xl sm:mx-auto md:py-6">
+    <section  class="section__text taps max-w-screen-xl sm:mx-auto md:pb-6">
         <div class="w-full">
             <span class="text-center w-full">
-                <h2 class="text-5xl my-10 mb-12" data-aos="fade-down"> Our values </h2>
+                <h2 class="text-5xl mb-10" data-aos="fade-down"> Our values </h2>
             </span>
         </div>
 

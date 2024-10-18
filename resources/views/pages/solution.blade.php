@@ -73,18 +73,12 @@
 @endsection
 
 @section('content')
-    <section class="hero section__text">
-        <img src="{{ asset('assets/images/delivery/solutions.jpg') }}" alt="" class="w-full">
-{{--        <div class="title">--}}
-{{--            <div class="section__text" data-aos="fade-right">--}}
-{{--                <h2 class="leading-normal text-3xl md:text-5xl">Solutions <br>--}}
-{{--                    Everex Express</h2>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+    <section class="hero mt-[4rem] md:mt-[5rem]">
+        <img src="{{ asset('assets/images/delivery/solutions.jpg') }}" alt="" class="w-full object-center object-contain">
     </section>
 
     <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 md:pt-8 md:my-0 w-full ">
-        <div class="content-width md:py-16 md:flex md:items-center justify-center text-center">
+        <div class="content-width md:py-10 md:flex md:items-center justify-center text-center">
             <div class="md:w-2/3 md:pr-8 lg:pr-16 mt-8 md:mt-0 order-1 flex flex-col items-start justify-center  md:order-0 ">
                 <aside class=" p-4 md:p-0">
                     <h2 class="md:text-5xl text-3xl font-bold md:my-12 my-8">@lang('solution.headline')</h2>
@@ -174,148 +168,15 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" class="max-w-screen-xl sm:mx-auto md:py-8 my-16 px-4 text-center">
-        <a href="{{ url('/merchant') }}" class="bg-[#f03a40] py-5 px-8 text-xl rounded-3xl hover:bg-red-700 hover:text-white tracking-wide hover:tracking-widest duration-500">@lang('home.sub')</a>
+    <section data-aos="fade-up" class="max-w-screen-xl sm:mx-auto md:py-5 px-4 text-center">
+        <a href="{{ url('/merchant') }}" class="bg-[#f03a40] py-3 px-8 text-xl rounded-full hover:bg-red-700 text-white tracking-wide hover:tracking-widest duration-500">@lang('home.sub')</a>
     </section>
 
-{{--    <section data-aos="fade-up" class="section__text about-carousel max-w-screen-xl sm:mx-auto md:py-8 my-10 lg:px-4">--}}
-{{--        <div id="default-carousel" class="relative w-full" data-carousel="slide">--}}
-{{--            <!-- Carousel wrapper -->--}}
-{{--            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">--}}
-{{--                <!-- Item 1 -->--}}
-{{--                <div class="hidden duration-700 ease-in-out" data-carousel-item>--}}
-{{--                    <a href="#"--}}
-{{--                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200">--}}
-{{--                        <div >--}}
-{{--                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900">Noteworthy--}}
-{{--                                technology acquisitions 2021</h2>--}}
-{{--                            <p class="my-6 font-normal text-gray-700 hidden md:grid">What makes quick commerce quick?--}}
-{{--                                We--}}
-{{--                                stand for swift personalised delivery solutions for our customers, partners and employees.--}}
-{{--                                Learn how we empower authentic lifestyles and drive innovation across the globe.</p>--}}
-{{--                        </div>--}}
-{{--                        <img  class="object-cover w-full rounded-t-lg h-96 md:h-auto  "--}}
-{{--                            src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg"--}}
-{{--                            alt="">--}}
-{{--                    </a>--}}
 
-{{--                </div>--}}
-{{--                <div class="hidden duration-700 ease-in-out" data-carousel-item>--}}
-{{--                    <a href="#"--}}
-{{--                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200">--}}
-{{--                        <div>--}}
-{{--                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900">Noteworthy--}}
-{{--                                technology acquisitions 2021</h2>--}}
-{{--                            <p class="my-6 font-normal text-gray-700 hidden md:grid">What makes quick commerce quick?--}}
-{{--                                We--}}
-{{--                                stand for swift personalised delivery solutions for our customers, partners and employees.--}}
-{{--                                Learn how we empower authentic lifestyles and drive innovation across the globe.</p>--}}
-{{--                        </div>--}}
-{{--                        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto  "--}}
-{{--                            src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg"--}}
-{{--                            alt="">--}}
-{{--                    </a>--}}
-
-{{--                </div>--}}
-{{--                <div class="hidden duration-700 ease-in-out" data-carousel-item>--}}
-{{--                    <a href="#"--}}
-{{--                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200">--}}
-{{--                        <div>--}}
-{{--                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900">Noteworthy--}}
-{{--                                technology acquisitions 2021</h2>--}}
-{{--                            <p class="my-6 font-normal text-gray-700 hidden md:grid">What makes quick commerce quick?--}}
-{{--                                We--}}
-{{--                                stand for swift personalised delivery solutions for our customers, partners and employees.--}}
-{{--                                Learn how we empower authentic lifestyles and drive innovation across the globe.</p>--}}
-{{--                        </div>--}}
-{{--                        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto  "--}}
-{{--                            src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg"--}}
-{{--                            alt="">--}}
-{{--                    </a>--}}
-
-{{--                </div>--}}
-{{--                <div class="hidden duration-700 ease-in-out" data-carousel-item>--}}
-{{--                    <a href="#"--}}
-{{--                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200">--}}
-{{--                        <div>--}}
-{{--                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy--}}
-{{--                                technology acquisitions 2021</h2>--}}
-{{--                            <p class="my-6 font-normal text-gray-700 dark:text-gray-400 hidden md:grid">What makes quick commerce quick?--}}
-{{--                                We stand for swift personalised delivery solutions for our customers, partners and--}}
-{{--                                employees. Learn how we empower authentic lifestyles and drive innovation across the globe.--}}
-{{--                            </p>--}}
-{{--                        </div>--}}
-{{--                        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto  "--}}
-{{--                            src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg"--}}
-{{--                            alt="">--}}
-{{--                    </a>--}}
-
-{{--                </div>--}}
-{{--                <div class="hidden duration-700 ease-in-out" data-carousel-item>--}}
-{{--                    <a href="#"--}}
-{{--                        class="absolute w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 bg-white border-gray-200">--}}
-{{--                        <div>--}}
-{{--                            <h2 class="mb-2 text-5xl font-bold tracking-tight text-gray-900">Noteworthy--}}
-{{--                                technology acquisitions 2021</h2>--}}
-{{--                            <p class="my-6 font-normal text-gray-700 hidden md:grid">What makes quick commerce quick?--}}
-{{--                                We stand for swift personalised delivery solutions for our customers, partners and--}}
-{{--                                employees. Learn how we empower authentic lifestyles and drive innovation across the globe.--}}
-{{--                            </p>--}}
-{{--                        </div>--}}
-{{--                        <img class="object-cover w-full rounded-t-lg h-96 md:h-auto  "--}}
-{{--                            src="https://www.foodpanda.com/wp-content/uploads/2023/02/foodpanda-home-2-1024x576.jpg"--}}
-{{--                            alt="">--}}
-{{--                    </a>--}}
-
-{{--                </div>--}}
-{{--            </div>--}}
-{{--            <!-- Slider indicators -->--}}
-{{--            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">--}}
-{{--                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"--}}
-{{--                    data-carousel-slide-to="0"></button>--}}
-{{--                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"--}}
-{{--                    data-carousel-slide-to="1"></button>--}}
-{{--                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"--}}
-{{--                    data-carousel-slide-to="2"></button>--}}
-{{--                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"--}}
-{{--                    data-carousel-slide-to="3"></button>--}}
-{{--                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"--}}
-{{--                    data-carousel-slide-to="4"></button>--}}
-{{--            </div>--}}
-{{--            <!-- Slider controls -->--}}
-{{--            <button type="button"--}}
-{{--                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"--}}
-{{--                data-carousel-prev>--}}
-{{--                <span--}}
-{{--                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">--}}
-{{--                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"--}}
-{{--                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">--}}
-{{--                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
-{{--                            d="M5 1 1 5l4 4" />--}}
-{{--                    </svg>--}}
-{{--                    <span class="sr-only">Previous</span>--}}
-{{--                </span>--}}
-{{--            </button>--}}
-{{--            <button type="button"--}}
-{{--                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"--}}
-{{--                data-carousel-next>--}}
-{{--                <span--}}
-{{--                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">--}}
-{{--                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"--}}
-{{--                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">--}}
-{{--                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
-{{--                            d="m1 9 4-4-4-4" />--}}
-{{--                    </svg>--}}
-{{--                    <span class="sr-only">Next</span>--}}
-{{--                </span>--}}
-{{--            </button>--}}
-{{--        </div>--}}
-{{--    </section>--}}
-
-    <section class="section__text taps md:mt-16 max-w-screen-xl sm:mx-auto md:py-6 ">
+    <section class="section__text taps md:mt-10 max-w-screen-xl sm:mx-auto ">
         <div class="w-full">
           <span class="text-center w-full">
-            <h2 class="text-5xl mb-12" data-aos="fade-down"> Our values </h2>
+            <h2 class="text-5xl mb-5" data-aos="fade-down"> Our values </h2>
           </span>
         </div>
 

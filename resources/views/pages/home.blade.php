@@ -51,13 +51,13 @@
         <div class="swiper_banner mySwiper_banner max-sm:!h-[26vh]">
             <div class="swiper-wrapper">
                 <div class="swiper-slide max-sm:!rounded-2xl">
-                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl">
+                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">
                 </div>
                 <div class="swiper-slide max-sm:!rounded-2xl">
-                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl">
+                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">
                 </div>
                 <div class="swiper-slide max-sm:!rounded-2xl">
-                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl">
+                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -74,7 +74,7 @@
 
     <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
         <div class="sm:mx-4 grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
-            <img data-aos="fade-right" class="object-cover object-center w-full rounded-2xl h-[24rem]" src="{{url('assets/images/sdd.jpg')}}" alt="">
+            <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/sdd.jpg')}}" alt="">
 
             <div class="" data-aos="fade-right">
                 <h2 class="mb-2 font-bold tracking-tight text-gray-900 md:text-5xl text-3xl">@lang('home.title_one')</h2>
@@ -91,13 +91,13 @@
                 <p class="my-6 font-normal text-gray-700 ">@lang('home.sub_title_two')</p>
                 <a href="{{ url('/merchant') }}" type="button" class="section_link focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2">@lang('home.sub')</a>
             </div>
-            <img data-aos="fade-right" class="object-cover object-center w-full rounded-2xl h-[26rem]" src="{{url('assets/images/aps.jpg')}}" alt="">
+            <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/aps.jpg')}}" alt="">
         </div>
     </section>
 
     <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
         <div class="sm:mx-4 grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
-            <img data-aos="fade-right" class="object-cover object-center w-full rounded-2xl h-[24rem]" src="{{url('assets/images/real_time_trackings.jpg')}}" alt="">
+            <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/real_time_trackings.jpg')}}" alt="">
             <div class="" data-aos="fade-right">
                 <h2 class="mb-2 font-bold tracking-tight text-gray-900 md:text-5xl text-3xl">@lang('home.title_three')</h2>
                 <p class="my-6 font-normal text-gray-700">@lang('home.sub_title_three')</p>
@@ -114,7 +114,7 @@
                 <p class="my-6 font-normal text-gray-700">@lang('home.sub_title_four')</p>
                 <a href="{{ url('/merchant') }}" type="button" class="px-3 py-2 focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm ">@lang('home.sub')</a>
             </div>
-            <img data-aos="fade-right" class="object-cover object-center w-full rounded-2xl h-[24rem] max-sm:order-first" src="{{url('assets/images/rcsupport.jpg')}}" alt="">
+            <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl max-sm:order-first" src="{{url('assets/images/rcsupport.jpg')}}" alt="">
         </div>
     </section>
 @endsection
