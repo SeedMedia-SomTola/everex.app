@@ -38,6 +38,7 @@
             font-family: "Noto Sans Khmer", sans-serif;
             overflow-x: hidden;
         }
+
     </style>
 
 </head>
@@ -75,6 +76,19 @@
                     slidesPerView: 3, // Show 3 slides
                 },
             },
+        });
+
+        var swiper_banner = new Swiper(".mySwiper_banner", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: false,
+            }
         });
     </script>
 </body>

@@ -43,13 +43,44 @@
     .overlay.active {
         display: block;
     }
+    .nav-items{
+        display: inline-block;
+        position: relative;
+        transition: 0.4s all ease;
+    }
+    .nav-items::after{
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom:0;
+        background: #ed1d25;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.5s ease-out;
+    }
+
+    .nav-items:hover::after{
+        transform:scaleX(1);
+        transform-origin: bottom left;
+    }
+    .active::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #ed1d25;
+        transform:scaleX(1);
+        transform-origin: bottom left;
+    }
 </style>
 
 
 <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 start-0 z-50 w-full ">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 md:p-4">
         <a href="{{ url('/') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="{{ asset('assets/images/logo/Logo_white.png') }}" class="h-8" alt="Flowbite Logo" />
+            <img src="{{ asset('assets/images/logo/Logo_white.png') }}" class="h-16" alt="Flowbite Logo" />
         </a>
         <div class=" flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
             <button id="btn-1" type="button" data-dropdown-toggle="language-dropdown-menu"
@@ -144,30 +175,35 @@
                 <div id="drawer" class="drawer fixed top-0 right-0 h-full w-72 bg-white shadow-lg p-4 z-40">
                     <ul class="flex flex-col font-medium p-4 mt-10 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse">
                         <li>
-                            <a href="{{ url('/') }}"
-                                class="block new py-2 px-3 active rounded md:bg-transparent dark:text-white md:dark:hover:text-red-500"
+                            <a href="{{ route('home') }}"
+                                class="block new py-2 px-3 rounded md:bg-transparent nav-items {{ request()->routeIs('home') ? 'text-red-700 active':''}}"
                                 aria-current="page">@lang('messages.home')</a>
                         </li>
                         <li>
-                            <a href="{{ url('/about') }}"
-                                class="block new py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.about')</a>
+                            <a href="{{ route('about') }}"
+                                class="block new py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent nav-items {{ request()->routeIs('about') ? 'text-[#ed1d25] active':''}}">@lang('messages.about')</a>
                         </li>
                         <li>
-                            <a href="{{ url('/pricing') }}"
-                                class="block new py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.pricing')</a>
+                            <a href="{{ route('pricing') }}"
+                                class="block new py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent nav-items {{ request()->routeIs('pricing') ? 'text-[#ed1d25] active':''}}">@lang('messages.pricing')</a>
                         </li>
                         <li>
-                            <a href="{{ url('/solution') }}"
-                                class="block new py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.solution')</a>
+                            <a href="{{ route('solution') }}"
+                                class="block new py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent nav-items {{ request()->routeIs('solution') ? 'text-[#ed1d25] active':''}}">@lang('messages.solution')</a>
                         </li>
                         <li>
                             <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar_menu"
-                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto">@lang('messages.our_partner')
-                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg>
+                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto nav-items">
+                                <div class="flex items-center">
+                                    <p>
+                                        @lang('messages.our_partner')
+                                    </p>
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                         fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                              stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </div>
                             </a>
 
                             <div id="dropdownNavbar_menu"
@@ -192,30 +228,35 @@
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
-                    <a href="{{ url('/') }}"
-                        class="block new py-2 px-3 active rounded md:p-0 md:bg-transparent dark:text-white md:dark:hover:text-red-500"
+                    <a href="{{ route('home') }}"
+                        class="block new py-2 px-3 md:p-0 md:bg-transparent nav-items {{ request()->routeIs('home') ? 'text-[#ed1d25] active':''}}"
                         aria-current="page">@lang('messages.home')</a>
                 </li>
                 <li>
-                    <a href="{{ url('/about') }}"
-                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.about')</a>
+                    <a href="{{ route('about') }}"
+                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ request()->routeIs('about') ? 'text-[#ed1d25] active':''}} nav-items">@lang('messages.about')</a>
                 </li>
                 <li>
-                    <a href="{{ url('/pricing') }}"
-                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.pricing')</a>
+                    <a href="{{ route('pricing') }}"
+                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ request()->routeIs('pricing') ? 'text-[#ed1d25] active':''}} nav-items">@lang('messages.pricing')</a>
                 </li>
                 <li>
-                    <a href="{{ url('/solution') }}"
-                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent dark:text-white md:dark:hover:text-red-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.solution')</a>
+                    <a href="{{ route('solution') }}"
+                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ request()->routeIs('solution') ? 'text-[#ed1d25] active':''}} nav-items">@lang('messages.solution')</a>
                 </li>
                 <li>
                     <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                        class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-red-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">@lang('messages.our_partner')
-                        <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="m1 1 4 4 4-4" />
-                        </svg>
+                        class="w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto nav-items">
+                       <div class="flex items-center">
+                           <p>
+                               @lang('messages.our_partner')
+                           </p>
+                           <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                     stroke-width="2" d="m1 1 4 4 4-4" />
+                           </svg>
+                       </div>
                     </a>
 
                     <div id="dropdownNavbar"
