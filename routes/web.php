@@ -33,9 +33,9 @@ Route::get('/about', [AboutController::class,'index'])->name('about');
 Route::get('/news', [NewsController::class,'index'])->name('news');
 Route::get('/pricing', [PricingController::class,'index'])->name('pricing');
 Route::get('/merchant',  [MerchantController::class,'index'])->name('mercharts.register');
-Route::post('/merchant', [MerchantController::class, 'register']);
+Route::post('/merchant', [MerchantController::class, 'register'])->name('merchant');
 Route::get('/delivery',  [DeliveryController::class,'index'])->name('deliverys.register');
-Route::post('/delivery',  [DeliveryController::class,'deliveryRegister']);
+Route::post('/delivery',  [DeliveryController::class,'deliveryRegister'])->name('delivery');
 Route::get('/solution',  [SolutionController::class,'index'])->name('solution');
 
 Route::get('locale/{lang}',  [LocalizationController::class,'setLocale'])->name('locale');

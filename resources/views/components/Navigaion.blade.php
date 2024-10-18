@@ -74,12 +74,27 @@
         transform:scaleX(1);
         transform-origin: bottom left;
     }
+
+    .nav-link{
+        transform: translateX(60%);
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+    }
+    .nav-link-1{
+        transform: translateX(80%);
+        visibility: hidden;
+        transition: all .5s ease-in-out;
+    }
+    .nav-link.active-nav-link, .nav-link-1.active-nav-link{
+        transform: translateX(0);
+        visibility: visible;
+    }
 </style>
 
 
 <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed top-0 start-0 z-50 w-full ">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 md:p-4">
-        <a href="{{ url('/') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="{{ route('home') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('assets/images/logo/Logo_white.png') }}" class="h-16" alt="Flowbite Logo" />
         </a>
         <div class=" flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
@@ -173,27 +188,27 @@
                 <div id="overlay" class="overlay"></div>
 
                 <div id="drawer" class="drawer fixed top-0 right-0 h-full w-72 bg-white shadow-lg p-4 z-40">
-                    <ul class="flex flex-col font-medium p-4 mt-10 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse">
+                    <ul class="flex flex-col font-medium ">
                         <li>
                             <a href="{{ route('home') }}"
-                                class="block new py-2 px-3 rounded md:bg-transparent nav-items {{ request()->routeIs('home') ? 'text-red-700 active':''}}"
+                                class="block new p-2 w-full rounded-t-lg md:bg-transparent nav-items {{ request()->routeIs('home') ? 'text-white active':''}}"
                                 aria-current="page">@lang('messages.home')</a>
                         </li>
                         <li>
                             <a href="{{ route('about') }}"
-                                class="block new py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent nav-items {{ request()->routeIs('about') ? 'text-[#ed1d25] active':''}}">@lang('messages.about')</a>
+                                class="block new p-2 w-full rounded-t-lg text-gray-900 hover:bg-gray-100 md:hover:bg-transparent nav-items {{ request()->routeIs('about') ? 'text-white active':''}}">@lang('messages.about')</a>
                         </li>
                         <li>
                             <a href="{{ route('pricing') }}"
-                                class="block new py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent nav-items {{ request()->routeIs('pricing') ? 'text-[#ed1d25] active':''}}">@lang('messages.pricing')</a>
+                                class="block new p-2 w-full rounded-t-lg text-gray-900  hover:bg-gray-100 md:hover:bg-transparent nav-items {{ request()->routeIs('pricing') ? 'text-white active':''}}">@lang('messages.pricing')</a>
                         </li>
                         <li>
                             <a href="{{ route('solution') }}"
-                                class="block new py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent nav-items {{ request()->routeIs('solution') ? 'text-[#ed1d25] active':''}}">@lang('messages.solution')</a>
+                                class="block new p-2 w-full rounded-t-lg text-gray-900 hover:bg-gray-100 md:hover:bg-transparent nav-items {{ request()->routeIs('solution') ? 'text-white active':''}}">@lang('messages.solution')</a>
                         </li>
                         <li>
-                            <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar_menu"
-                                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto nav-items">
+                            <a onclick="onClick()"
+                                class="flex items-center p-2 rounded-t-lg justify-between w-full text-black hover:text-white nav-items {{ request()->routeIs('merchant') ? 'active text-[#ed1d25]':''}}">
                                 <div class="flex items-center">
                                     <p>
                                         @lang('messages.our_partner')
@@ -206,17 +221,16 @@
                                 </div>
                             </a>
 
-                            <div id="dropdownNavbar_menu"
-                                class="z-10 hidden  font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                                <ul class="py-2 text-sm text-white-700 dark:text-gray-400"
-                                    aria-labelledby="dropdownLargeButton">
+                            <div
+                                class="z-10 font-normal bg-white rounded-lg w-full">
+                                <ul class="py-2 text-sm text-white-700">
                                     <li>
-                                        <a href="{{ url('/merchant') }}"
-                                            class="block section_dropdown px-4 py-2 text-gray-950">@lang('messages.merchant')</a>
+                                        <a href="{{ route('merchant') }}"
+                                            class="block p-3 text-gray-950 nav-link font-semibold nav-items {{ request()->routeIs('merchant') ? 'active text-[#ed1d25]':''}}">@lang('messages.merchant')</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('/delivery') }}"
-                                            class="block section_dropdown px-4 py-2 text-gray-950">@lang('messages.delivery')</a>
+                                        <a href="{{ route('delivery') }}"
+                                            class="block p-3 text-gray-950 nav-link-1 font-semibold nav-items {{ request()->routeIs('delivery') ? 'active text-[#ed1d25]':''}}">@lang('messages.delivery')</a>
                                     </li>
                                 </ul>
                             </div>
@@ -225,28 +239,29 @@
                 </div>
             </div>
         </div>
+        {{--laptop--}}
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                 <li>
                     <a href="{{ route('home') }}"
-                        class="block new py-2 px-3 md:p-0 md:bg-transparent nav-items {{ request()->routeIs('home') ? 'text-[#ed1d25] active':''}}"
+                        class="block new py-2 px-3 md:p-0 md:bg-transparent nav-items {{ request()->routeIs('home') ? 'active text-[#ed1d25]':''}}"
                         aria-current="page">@lang('messages.home')</a>
                 </li>
                 <li>
                     <a href="{{ route('about') }}"
-                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ request()->routeIs('about') ? 'text-[#ed1d25] active':''}} nav-items">@lang('messages.about')</a>
+                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ request()->routeIs('about') ? 'active text-[#ed1d25]':''}} nav-items">@lang('messages.about')</a>
                 </li>
                 <li>
                     <a href="{{ route('pricing') }}"
-                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ request()->routeIs('pricing') ? 'text-[#ed1d25] active':''}} nav-items">@lang('messages.pricing')</a>
+                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ request()->routeIs('pricing') ? 'active text-[#ed1d25]':''}} nav-items">@lang('messages.pricing')</a>
                 </li>
                 <li>
                     <a href="{{ route('solution') }}"
-                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ request()->routeIs('solution') ? 'text-[#ed1d25] active':''}} nav-items">@lang('messages.solution')</a>
+                        class="block new py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent {{ request()->routeIs('solution') ? 'active text-[#ed1d25]':''}} nav-items">@lang('messages.solution')</a>
                 </li>
                 <li>
                     <a id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                        class="w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto nav-items">
+                        class="w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-700 md:p-0 md:w-auto nav-items {{ request()->routeIs('merchant') ? 'active text-[#ed1d25]':''}}">
                        <div class="flex items-center">
                            <p>
                                @lang('messages.our_partner')
@@ -264,12 +279,12 @@
                         <ul class="py-2 text-sm text-white-700 dark:text-gray-400"
                             aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="{{ url('/merchant') }}"
-                                    class="block section_dropdown px-4 py-2">@lang('messages.merchant')</a>
+                                <a href="{{ route('merchant') }}"
+                                    class="block section_dropdown px-4 py-2 nav-items {{ request()->routeIs('merchant') ? 'active text-[#ed1d25]':''}}">@lang('messages.merchant')</a>
                             </li>
                             <li>
-                                <a href="{{ url('/delivery') }}"
-                                    class="block section_dropdown px-4 py-2">@lang('messages.delivery')</a>
+                                <a href="{{ route('delivery') }}"
+                                    class="block section_dropdown px-4 py-2 nav-items {{ request()->routeIs('delivery') ? 'active text-[#ed1d25]':''}}">@lang('messages.delivery')</a>
                             </li>
                         </ul>
                     </div>
@@ -306,4 +321,9 @@
             $(this).addClass("active");
         });
     });
+
+    function onClick(){
+        document.querySelector('.nav-link').classList.add('active-nav-link');
+        document.querySelector('.nav-link-1').classList.add('active-nav-link');
+    }
 </script>
