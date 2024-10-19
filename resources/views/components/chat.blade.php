@@ -55,7 +55,7 @@
 </style>
 <!-- Message -->
 <div id="popup"
-    class="fixed bottom-24 right-5 bg-white border shadow-lg p-6 mx-auto max-w-[330px] sm:max-w-sm w-full hidden z-50 rounded-lg">
+    class="fixed bottom-24 right-5 bg-[#ec1b23]/60 backdrop-blur-[60px] bg-opacity-100 border shadow-lg p-6 mx-auto max-w-[330px] sm:max-w-sm w-full hidden z-50 rounded-2xl">
     <div class="border-b">
         <div class="flex justify-between items-center mb-4 pb-2">
             <h2 class="text-[15px] md:text-xl font-semibold tracking-wider text-[#edbeb7]">
@@ -63,13 +63,13 @@
             </h2>
             <button id="closePopup" class="text-gray-600 hover:text-gray-900 focus:outline-none">
                 <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
+                    stroke="#ffffff">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
         </div>
     </div>
-    <div id="time" class="text-md text-center font-semibold text-gray-800 py-2"></div>
+    <div id="time" class="text-md text-center font-semibold text-white py-2"></div>
     <div class="flex logo_img">
         <img src="{{ url('assets/images/logo/Logo_white.png') }}" alt="logo" class="" width="40">
         <div id="loadingDots" class="flex space-x-2 justify-center items-center bg-white bg-opacity-0 ms-3 mt-3">
@@ -78,17 +78,17 @@
             <div class="h-2 w-2 bg-[#f03a40] rounded-full animate-bounce"></div>
         </div>
     </div>
-    <div id="resultMessage" class="ml-9 px-5 py-3 -mt-2 rounded-lg text-[12px] md:text-[14px] text-gray-400 tracking-wider">
+    <div id="resultMessage" class="ml-9 px-5 py-3 -mt-2 rounded-2xl text-[12px] md:text-[14px] text-[#ffffff] tracking-wider">
         <p id="resultMessageOne" class="result-message"></p>
         <p id="resultMessageTwo" class="result-message"></p>
     </div>
 
     <div class="flex justify-be mt-7">
         <button type="button"
-            class="w-full text-[14px] md:text-[16px] tracking-wider focus:outline-none text-white bg-[#f03a40] hover:tracking-widest transition-all duration-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg py-2.5 me-2 mb-2"><i
+            class="w-full text-[14px] md:text-[16px] tracking-wider focus:outline-none text-white bg-[#f03a40] hover:tracking-widest transition-all duration-500 focus:ring-4 focus:ring-red-300 font-medium rounded-2xl py-2.5 me-2 mb-2"><i
                 class="fa-brands fa-telegram me-2"></i>Telegram</button>
         <button type="button"
-            class="w-full text-[14px] md:text-[16px] tracking-wider focus:outline-none text-white bg-[#6e3999] hover:tracking-widest transition-all duration-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg py-2.5 me-2 mb-2"><i
+            class="w-full text-[14px] md:text-[16px] tracking-wider focus:outline-none text-white bg-[#6e3999] hover:tracking-widest transition-all duration-500 focus:ring-4 focus:ring-red-300 font-medium rounded-2xl py-2.5 me-2 mb-2"><i
                 class="fa-solid fa-phone me-2"></i>Call</button>
     </div>
 </div>
@@ -136,7 +136,7 @@
 
         setTimeout(function() {
             loadingDots.style.display = 'none';
-            resultMessage.classList.add('shadow-md');
+            resultMessage.classList.add('border-2');
             resultMessageOne.textContent = 'Hi there👋.';
             resultMessageTwo.textContent = 'How can I help you?';
         }, 2000);

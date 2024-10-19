@@ -16,14 +16,14 @@
 
 @section('content')
     <section class="w-full mx-auto md:pt-8">
-		<div class="wrapper" style="background-image: url({{ asset('assets/images/delivery/bg_register_delivery_1.jpg') }});">
-            <div class="inner p-[2rem]">
-                <div class="w-full max-w-[24rem] mx-auto overflow-x-hidden mr-[2rem]">
+		<div class="wrapper p-3" style="background-image: url({{ asset('assets/images/delivery/bg_register_delivery_1.jpg') }});">
+            <div class="inner p-[2rem] max-sm:flex-wrap">
+                <div class="w-full max-w-[24rem] mx-auto overflow-x-hidden md:mr-[2rem]">
                     <img src="{{ asset('assets/images/delivery/recruitment everex-01.jpg') }}" alt="" class="w-full object-contain object-center rounded-2xl">
                 </div>
                 <form method="POST" action="{{ route('deliverys.register') }}">
                     @csrf
-                    <h3 class="text-white text-[16px] lg:text-[28px] text-center text-wrap mb-5">@lang('messages.delivery')</h3>
+                    <h3 class="text-white text-[16px] lg:text-[28px] text-center text-wrap my-5 md:mb-5">@lang('messages.delivery')</h3>
                     @component('components.alert')
                     @endcomponent
 

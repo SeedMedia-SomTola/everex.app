@@ -77,23 +77,23 @@
         <img src="{{ asset('assets/images/delivery/solutions.jpg') }}" alt="" class="w-full object-center object-contain">
     </section>
 
-    <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:my-0 w-full ">
+    <section data-aos="fade-up" class="p-3 max-w-screen-xl sm:mx-auto md:my-0 w-full ">
         <div class="content-width md:flex md:items-center justify-center text-center">
             <div class="md:w-2/3  order-1 flex flex-col items-start justify-center  md:order-0 ">
                 <aside class=" md:p-0">
-                    <h2 class="md:text-5xl text-3xl font-bold my-5">@lang('solution.headline')</h2>
-                    <h3 class="md:text-2xl text-xl font-bold my-5">@lang('solution.subheadline')</h3>
-                    <p>@lang('solution.main_text')</p>
-                    <p class="mt-2">@lang('solution.call_to_action') <span class="font-bold">@lang('solution.sub_call_to_action')</span></p>
+                    <h2 class="text-[18px] md:text-[24px] font-bold my-5">@lang('solution.headline')</h2>
+                    <h3 class="text-[16px] md:text-[18px] font-bold my-5">@lang('solution.subheadline')</h3>
+                    <p class="text-[12px] md:text-[16]">@lang('solution.main_text')</p>
+                    <p class="text-[12px] md:text-[16] mt-2">@lang('solution.call_to_action') <span class="font-bold">@lang('solution.sub_call_to_action')</span></p>
                 </aside>
             </div>
         </div>
     </section>
 
-    <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 mt-10 px-4">
+    <section data-aos="fade-up" class="max-w-screen-xl sm:mx-auto md:py-8 mt-10 px-4">
 
         <div class="my-5">
-            <h2 class="md:text-2xl text-3xl font-semibold text-center">@lang('solution.title')</h2>
+            <h2 class="text-[18px] md:text-[24px] font-semibold text-center">@lang('solution.title')</h2>
         </div>
 
         <div class="grid grid-cols-12 justify-center items-center gap-[2vw] mt-10">
@@ -103,7 +103,7 @@
                         <i class="fa-solid fa-truck-fast mb-5 text-3xl md:text-4xl text-[#f03a40]"></i>
                     </div>
                     <a href="#">
-                        <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 text-center">@lang('solution.speed')</h5>
+                        <h5 class="section_h mb-2 text-[18px] md:text-[24px] font-bold tracking-normal uppercase text-gray-900 text-center">@lang('solution.speed')</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 text-center py-3">@lang('solution.sub_speed')</p>
                     <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-[#f03a40] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -120,7 +120,7 @@
                         <i class="fa-solid fa-handshake mb-5 text-[#f03a40] text-3xl md:text-4xl"></i>
                     </div>
                     <a href="#">
-                        <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 text-center">@lang('solution.reliability')</h5>
+                        <h5 class="section_h mb-2 text-[18px] md:text-[24px] font-bold tracking-normal uppercase text-gray-900 text-center">@lang('solution.reliability')</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 text-center py-3">@lang('solution.sub_reliability')</p>
                     <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-[#f03a40] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -137,7 +137,7 @@
                         <i class="fa-solid fa-money-bill-wave mb-5 text-[#f03a40] text-3xl md:text-4xl"></i>
                     </div>
                     <a href="#">
-                        <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 text-center">@lang('solution.affordability')</h5>
+                        <h5 class="section_h mb-2 text-[18px] md:text-[24px] font-bold tracking-normal uppercase text-gray-900 text-center">@lang('solution.affordability')</h5>
                     </a>
                     <p class="mb-3 h-[130px] font-normal text-gray-700 text-center py-3">@lang('solution.sub_affordability')</p>
                     <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-[#f03a40] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300">
@@ -154,7 +154,7 @@
                         <i class="fa-solid fa-handshake-angle mb-5 text-[#f03a40] text-3xl md:text-4xl"></i>
                     </div>
                     <a href="#">
-                        <h5 class="section_h mb-2 lg:text-lg text-2xl font-bold tracking-normal uppercase text-gray-900 text-center">@lang('solution.customer_support')</h5>
+                        <h5 class="section_h mb-2 text-[18px] md:text-[24px] font-bold tracking-normal uppercase text-gray-900 text-center">@lang('solution.customer_support')</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700text-center py-3">@lang('solution.sub_customer_support')</p>
                     <a href="{{ url('/merchant') }}" class="btn inline-flex items-center w-full justify-center text-center px-5 py-3 text-md font-medium text-white bg-[#f03a40] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-blue-300">

@@ -10,7 +10,7 @@
 @section('content')
     <section data-aos="fade-up" class="section__text pricing px-4 md:px-0 pt-400" id="pricing" x-data="{ annual: false, month: '/@lang('pricing.month')', year: '/@lang('pricing.year')', open: false, open_1: false, open_2: false, open_3: false }">
         <div class="container">
-            <h2 class="title text-red-700">@lang('pricing.title')</h2>
+            <h2 class="title text-red-700 text-[16px] md:text-[24px]">@lang('pricing.title')</h2>
             <p class="description">
                 @lang('pricing.des')
             </p>
@@ -29,7 +29,7 @@
 
         <section data-aos="fade-up" class="my-4">
             <div class="grid grid-cols-12 max-w-screen-xl mx-auto md:px-4 justify-center items-center gap-4">
-                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full h-[45rem] p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full h-full md:h-[45rem] p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 ">
                     <h5 class="mb-4 text-xl font-medium text-red-500 ">Free</h5>
                     <div class="flex items-baseline text-gray-900">
                         <span class="text-2xl font-semibold text-red-700">$</span>
@@ -231,7 +231,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full h-[45rem] p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full h-full md:h-[45rem] p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
                     <h5 class="mb-4 text-xl font-medium text-red-500 ">Basic</h5>
                     <div class="flex items-baseline text-gray-900 ">
                         <span class="text-2xl font-semibold text-red-700">$</span>
@@ -422,7 +422,7 @@
                     </ul>
 
                 </div>
-                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full h-[45rem] p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full h-full md:h-[45rem] p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
                     <h5 class="mb-4 text-xl font-medium text-red-500 ">Standard</h5>
                     <div class="flex items-baseline text-gray-900 ">
                         <span class="text-2xl font-semibold text-red-700">$</span>
@@ -607,7 +607,7 @@
                     </ul>
 
                 </div>
-                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full h-[45rem] p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
+                <div class="col-span-12 md:col-span-6 xl:col-span-3 w-full h-full md:h-[45rem] p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
                     <h5 class="mb-4 text-xl font-medium text-red-500 ">Premium</h5>
                     <div class="flex items-baseline text-gray-900">
                         <span class="text-2xl font-semibold text-red-700">$</span>

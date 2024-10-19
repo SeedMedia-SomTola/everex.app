@@ -80,7 +80,7 @@
     <section  class="section__text taps max-w-screen-xl sm:mx-auto md:pb-6">
         <div class="w-full">
             <span class="text-center w-full">
-                <h2 class="text-5xl mb-10" data-aos="fade-down"> Our values </h2>
+                <h2 class="text-[24px] mb-10" data-aos="fade-down"> Our values </h2>
             </span>
         </div>
 
