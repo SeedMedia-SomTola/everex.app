@@ -79,7 +79,7 @@
             <div class="" data-aos="fade-right">
                 <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_one')</h2>
                 <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_one')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 my-5">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class="focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 my-2">@lang('home.sub')</a>
             </div>
         </div>
     </section>
@@ -89,7 +89,7 @@
             <div class="md:order-none lg:order-none order-2" data-aos="fade-right">
                 <h2 class=" font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_two')</h2>
                 <p class=" font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_two')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="section_link focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 my-5">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class="section_link focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 my-2">@lang('home.sub')</a>
             </div>
             <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/aps.jpg')}}" alt="">
         </div>
@@ -101,18 +101,17 @@
             <div class="" data-aos="fade-right">
                 <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_three')</h2>
                 <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_three')</p>
-                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 my-5">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 my-2">@lang('home.sub')</a>
             </div>
         </div>
     </section>
-
 
     <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
         <div class=" grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
             <div class="" data-aos="fade-right">
                 <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_four')</h2>
                 <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_four')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="px-3 py-2 focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm my-5">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class="px-3 py-2 focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm my-2">@lang('home.sub')</a>
             </div>
             <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl max-sm:order-first my-2" src="{{url('assets/images/rcsupport.jpg')}}" alt="">
         </div>
