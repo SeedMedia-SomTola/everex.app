@@ -77,12 +77,12 @@
         <img src="{{ asset('assets/images/delivery/solutions.jpg') }}" alt="" class="w-full object-center object-contain">
     </section>
 
-    <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 md:pt-8 md:my-0 w-full ">
-        <div class="content-width md:py-10 md:flex md:items-center justify-center text-center">
-            <div class="md:w-2/3 md:pr-8 lg:pr-16 mt-8 md:mt-0 order-1 flex flex-col items-start justify-center  md:order-0 ">
-                <aside class=" p-4 md:p-0">
-                    <h2 class="md:text-5xl text-3xl font-bold md:my-12 my-8">@lang('solution.headline')</h2>
-                    <h3 class="md:text-2xl text-xl font-bold md:my-5 my-3">@lang('solution.subheadline')</h3>
+    <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:my-0 w-full ">
+        <div class="content-width md:flex md:items-center justify-center text-center">
+            <div class="md:w-2/3  order-1 flex flex-col items-start justify-center  md:order-0 ">
+                <aside class=" md:p-0">
+                    <h2 class="md:text-5xl text-3xl font-bold my-5">@lang('solution.headline')</h2>
+                    <h3 class="md:text-2xl text-xl font-bold my-5">@lang('solution.subheadline')</h3>
                     <p>@lang('solution.main_text')</p>
                     <p class="mt-2">@lang('solution.call_to_action') <span class="font-bold">@lang('solution.sub_call_to_action')</span></p>
                 </aside>
@@ -90,14 +90,14 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 my-10 px-4">
+    <section data-aos="fade-up" class="section__text max-w-screen-xl sm:mx-auto md:py-8 mt-10 px-4">
 
-        <div class="">
+        <div class="my-5">
             <h2 class="md:text-2xl text-3xl font-semibold text-center">@lang('solution.title')</h2>
         </div>
 
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 mt-10">
-            <div class="card bg-white border border-gray-300 rounded-lg shadow-2xl">
+        <div class="grid grid-cols-12 justify-center items-center gap-[2vw] mt-10">
+            <div class="col-span-12 md:col-span-6 xl:col-span-3 card bg-white border border-gray-300 rounded-lg shadow-xl">
                 <div class="p-5">
                     <div class="text-center">
                         <i class="fa-solid fa-truck-fast mb-5 text-3xl md:text-4xl text-[#f03a40]"></i>
@@ -114,7 +114,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card bg-white border border-gray-300 rounded-lg shadow-2xl">
+            <div class="col-span-12 md:col-span-6 xl:col-span-3 card bg-white border border-gray-300 rounded-lg shadow-xl">
                 <div class="p-5">
                     <div class="text-center">
                         <i class="fa-solid fa-handshake mb-5 text-[#f03a40] text-3xl md:text-4xl"></i>
@@ -131,7 +131,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card bg-white border border-gray-300 rounded-lg shadow-2xl">
+            <div class="col-span-12 md:col-span-6 xl:col-span-3 card bg-white border border-gray-300 rounded-lg shadow-xl">
                 <div class="p-5">
                     <div class="text-center">
                         <i class="fa-solid fa-money-bill-wave mb-5 text-[#f03a40] text-3xl md:text-4xl"></i>
@@ -148,7 +148,7 @@
                     </a>
                 </div>
             </div>
-            <div class="card bg-white border border-gray-300 rounded-lg shadow-2xl">
+            <div class="col-span-12 md:col-span-6 xl:col-span-3 card bg-white border border-gray-300 rounded-lg shadow-xl">
                 <div class="p-5">
                     <div class="text-center">
                         <i class="fa-solid fa-handshake-angle mb-5 text-[#f03a40] text-3xl md:text-4xl"></i>
@@ -168,7 +168,7 @@
         </div>
     </section>
 
-    <section data-aos="fade-up" class="max-w-screen-xl sm:mx-auto md:py-5 px-4 text-center">
+    <section data-aos="fade-up" class="max-w-screen-xl sm:mx-auto py-10 md:py-5 px-4 text-center">
         <a href="{{ url('/merchant') }}" class="bg-[#f03a40] py-3 px-8 text-xl rounded-full hover:bg-red-700 text-white tracking-wide hover:tracking-widest duration-500">@lang('home.sub')</a>
     </section>
 

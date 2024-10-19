@@ -34,11 +34,26 @@
     @yield('blade_js')
 
     <style>
-        body {
-            font-family: "Noto Sans Khmer", sans-serif;
-            overflow-x: hidden;
+        @font-face {
+            font-family: Kantumruy;
+            src: url("{{ url('assets/fonts/Kantumruy-Regular.ttf') }}");
         }
 
+        @font-face {
+            font-family: Roboto;
+            src: url("{{ url('assets/fonts/Roboto-Regular.ttf') }}");
+        }
+
+        @font-face {
+            font-family: Gotham;
+            src: url("{{ url('assets/fonts/GOTHAM-BLACK_0.OTF') }}");
+        }
+
+        body {
+            margin: 0;
+            font-family: Kantumruy, "Roboto", sans-serif !important;
+            overflow-x: hidden;
+        }
     </style>
 
 </head>
