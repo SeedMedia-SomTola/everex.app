@@ -50,14 +50,17 @@
         <!-- Swiper -->
         <div class="swiper_banner mySwiper_banner max-sm:!h-[26vh]">
             <div class="swiper-wrapper">
-                <div class="swiper-slide max-sm:!rounded-2xl">
-                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">
+                <div class="swiper-slide max-sm:!rounded-2xl !bg-[#ec1b23]/30">
+                        <h1 class="p-[2rem]">Coming Soon</h1>
+{{--                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">--}}
                 </div>
-                <div class="swiper-slide max-sm:!rounded-2xl">
-                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">
+                <div class="swiper-slide max-sm:!rounded-2xl !bg-[#ec1b23]/30">
+                    <h1 class="p-[2rem]">Coming Soon</h1>
+{{--                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">--}}
                 </div>
-                <div class="swiper-slide max-sm:!rounded-2xl">
-                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">
+                <div class="swiper-slide max-sm:!rounded-2xl !bg-[#ec1b23]/30">
+                    <h1 class="p-[2rem]">Coming Soon</h1>
+{{--                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">--}}
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -72,48 +75,59 @@
         </div>
     </section>
 
-    <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
-        <div class="sm:mx-4 grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
-            <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/sdd.jpg')}}" alt="">
+    <div class="w-full max-w-screen-xl mx-auto px-5">
+        <div data-aos="fade-left" class="grid grid-cols-12 justify-center gap-[1vw]">
+            <div class="col-span-12 md:col-span-6 bg-[#ec1b23]/60 flex flex-col justify-center items-center w-full h-[289px] xl:h-[389px] rounded-2xl">
+                <h1 class="text-center text-white font-semibold text-[20px]">Coming Soon</h1>
+{{--                <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/sdd.jpg')}}" alt="">--}}
+            </div>
 
-            <div class="" data-aos="fade-right">
+            <div class="col-span-12 md:col-span-6 ">
                 <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_one')</h2>
                 <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_one')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 my-2">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class="px-6 py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-2xl mt-3 transition-all duration-[150ms]">
+                    @lang('home.sub')
+                </a>
             </div>
         </div>
-    </section>
-
-    <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
-        <div class="sm:mx-4 grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
-            <div class="md:order-none lg:order-none order-2" data-aos="fade-right">
-                <h2 class=" font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_two')</h2>
-                <p class=" font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_two')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="section_link focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 my-2">@lang('home.sub')</a>
+        <div data-aos="fade-right" class="grid grid-cols-12 justify-center gap-[1vw] mt-6">
+            <div class="md:order-last col-span-12 md:col-span-6 flex flex-col justify-center items-center w-full rounded-2xl">
+                <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/aps.jpg')}}" alt="">
             </div>
-            <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/aps.jpg')}}" alt="">
-        </div>
-    </section>
 
-    <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
-        <div class="sm:mx-4 grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
-            <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/real_time_trackings.jpg')}}" alt="">
-            <div class="" data-aos="fade-right">
+            <div class="col-span-12 md:col-span-6">
+                <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_two')</h2>
+                <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_two')</p>
+                <a href="{{ url('/merchant') }}" type="button" class="px-6 py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-2xl mt-3 transition-all duration-[150ms]">
+                    @lang('home.sub')
+                </a>
+            </div>
+        </div>
+        <div data-aos="fade-left" class="grid grid-cols-12 justify-center gap-[1vw] mt-6">
+            <div class="col-span-12 md:col-span-6 flex flex-col justify-center items-center w-full rounded-2xl">
+                <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/real_time_trackings.jpg')}}" alt="">
+            </div>
+
+            <div class="col-span-12 md:col-span-6">
                 <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_three')</h2>
                 <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_three')</p>
-                <a href="{{ url('/merchant') }}" type="button" class=" focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 my-2">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class="px-6 py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-2xl mt-3 transition-all duration-[150ms]">
+                    @lang('home.sub')
+                </a>
             </div>
         </div>
-    </section>
+        <div data-aos="fade-right" class="grid grid-cols-12 justify-center gap-[1vw] my-6">
+            <div class="md:order-last col-span-12 md:col-span-6 flex flex-col justify-center items-center w-full rounded-2xl">
+                <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/rcsupport.jpg')}}" alt="">
+            </div>
 
-    <section class="max-w-screen-xl sm:mx-auto py-0 md:p-4">
-        <div class=" grid grid-cols-1 gap-[1rem] sm:grid-cols-2 p-3">
-            <div class="" data-aos="fade-right">
+            <div class="col-span-12 md:col-span-6">
                 <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_four')</h2>
                 <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_four')</p>
-                <a href="{{ url('/merchant') }}" type="button" class="px-3 py-2 focus:outline-none text-white bg-[#f03a40] hover:bg-red-500 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm my-2">@lang('home.sub')</a>
+                <a href="{{ url('/merchant') }}" type="button" class="px-6 py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-2xl mt-3 transition-all duration-[150ms]">
+                    @lang('home.sub')
+                </a>
             </div>
-            <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl max-sm:order-first my-2" src="{{url('assets/images/rcsupport.jpg')}}" alt="">
         </div>
-    </section>
+    </div>
 @endsection
