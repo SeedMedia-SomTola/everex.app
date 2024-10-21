@@ -75,19 +75,19 @@
         </div>
     </section>
 
-    <div class="w-full max-w-screen-xl mx-auto px-5">
+    <div class="w-full max-w-screen-xl mx-auto px-5 overflow-x-hidden">
         <div data-aos="fade-left" class="grid grid-cols-12 justify-center gap-[1vw]">
             <div class="col-span-12 md:col-span-6 bg-[#ec1b23]/60 flex flex-col justify-center items-center w-full h-[289px] xl:h-[389px] rounded-2xl">
                 <h1 class="text-center text-white font-semibold text-[20px]">Coming Soon</h1>
 {{--                <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/sdd.jpg')}}" alt="">--}}
             </div>
 
-            <div class="col-span-12 md:col-span-6 flex flex-col justify-center gap-[2vw]">
+            <div class="col-span-12 md:col-span-6 max-sm:flex max-sm:flex-col max-sm:gap-[1vw]">
                 <div>
                     <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_one')</h2>
                     <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_one')</p>
                 </div>
-                <a href="{{ url('/merchant') }}" type="button" class="px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
+                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
                     @lang('home.sub')
                 </a>
             </div>
@@ -97,12 +97,12 @@
                 <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/aps.jpg')}}" alt="">
             </div>
 
-            <div class="col-span-12 md:col-span-6 flex flex-col justify-center gap-[2vw]">
+            <div class="col-span-12 md:col-span-6 max-sm:flex max-sm:flex-col max-sm:gap-[1vw]">
                <div>
                    <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_two')</h2>
                    <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_two')</p>
                </div>
-                <a href="{{ url('/merchant') }}" type="button" class="px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
+                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
                     @lang('home.sub')
                 </a>
             </div>
@@ -112,12 +112,12 @@
                 <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/real_time_trackings.jpg')}}" alt="">
             </div>
 
-            <div class="col-span-12 md:col-span-6 flex flex-col justify-center gap-[2vw]">
+            <div class="col-span-12 md:col-span-6 max-sm:flex max-sm:flex-col max-sm:gap-[1vw]">
                 <div>
                     <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_three')</h2>
                     <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_three')</p>
                 </div>
-                <a href="{{ url('/merchant') }}" type="button" class="px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
+                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
                     @lang('home.sub')
                 </a>
             </div>
@@ -127,12 +127,12 @@
                 <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/rcsupport.jpg')}}" alt="">
             </div>
 
-            <div class="col-span-12 md:col-span-6 flex flex-col justify-center gap-[2vw]">
+            <div class="col-span-12 md:col-span-6 max-sm:flex max-sm:flex-col max-sm:gap-[1vw]">
                 <div>
                     <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_four')</h2>
                     <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_four')</p>
                 </div>
-                <a href="{{ url('/merchant') }}" type="button" class="px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl mt-3 transition-all duration-[150ms]">
+                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl mt-3 transition-all duration-[150ms]">
                     @lang('home.sub')
                 </a>
             </div>
