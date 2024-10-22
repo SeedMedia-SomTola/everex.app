@@ -17,19 +17,19 @@
         <div>
             <ul class="text-white ">
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Contact Us</a>
+                    <a href="t.me/everexexpress" class="hover:underline">Contact Us</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Tiktok</a>
+                    <a href="https://www.tiktok.com/@everexexpress" class="hover:underline">Tiktok</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Facebook</a>
+                    <a href="https://www.facebook.com/everex.express?mibextid=ZbWKwL" class="hover:underline">Facebook</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="t.me/everex_express" class="hover:underline">Privacy Policy</a>
                 </li>
                 <li class="mb-4">
-                    <a href="#" class="hover:underline">Terms & Conditions</a>
+                    <a href="t.me/everexexpress" class="hover:underline">Terms & Conditions</a>
                 </li>
             </ul>
         </div>

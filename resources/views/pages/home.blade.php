@@ -83,11 +83,11 @@
             </div>
 
             <div class="col-span-12 md:col-span-6 max-sm:flex max-sm:flex-col max-sm:gap-[1vw]">
-                <div>
+                <div class="my-3">
                     <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_one')</h2>
-                    <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_one')</p>
+                    <p class="font-normal text-gray-700 text-[12px] md:text-[16px]">@lang('home.sub_title_one')</p>
                 </div>
-                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
+                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
                     @lang('home.sub')
                 </a>
             </div>
@@ -98,11 +98,11 @@
             </div>
 
             <div class="col-span-12 md:col-span-6 max-sm:flex max-sm:flex-col max-sm:gap-[1vw]">
-               <div>
+               <div class="my-3">
                    <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_two')</h2>
-                   <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_two')</p>
+                   <p class="font-normal text-gray-700 text-[12px] md:text-[16px]">@lang('home.sub_title_two')</p>
                </div>
-                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
+                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
                     @lang('home.sub')
                 </a>
             </div>
@@ -113,11 +113,11 @@
             </div>
 
             <div class="col-span-12 md:col-span-6 max-sm:flex max-sm:flex-col max-sm:gap-[1vw]">
-                <div>
+                <div class="my-3">
                     <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_three')</h2>
-                    <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_three')</p>
+                    <p class="font-normal text-gray-700 text-[12px] md:text-[16px]">@lang('home.sub_title_three')</p>
                 </div>
-                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
+                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl transition-all duration-[150ms]">
                     @lang('home.sub')
                 </a>
             </div>
@@ -128,11 +128,11 @@
             </div>
 
             <div class="col-span-12 md:col-span-6 max-sm:flex max-sm:flex-col max-sm:gap-[1vw]">
-                <div>
+                <div class="my-3">
                     <h2 class="font-bold tracking-tight text-gray-900 text-[16] md:text-[24px]">@lang('home.title_four')</h2>
-                    <p class="font-normal text-gray-700 text-[12] md:text-[16px]">@lang('home.sub_title_four')</p>
+                    <p class="font-normal text-gray-700 text-[12px] md:text-[16px]">@lang('home.sub_title_four')</p>
                 </div>
-                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 md:px-6 md:py-3 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl mt-3 transition-all duration-[150ms]">
+                <a href="{{ url('/merchant') }}" type="button" class="text-center px-3 py-2 bg-[#f03a40] hover:bg-[#ed1d25] text-[#ffffff] rounded-lg md:rounded-2xl mt-3 transition-all duration-[150ms]">
                     @lang('home.sub')
                 </a>
             </div>
