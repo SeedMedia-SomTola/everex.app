@@ -194,24 +194,24 @@
                     <ul class="flex flex-col font-medium ">
                         <li>
                             <a href="{{ route('home') }}"
-                                class="block new p-2 w-full rounded-t-lg md:bg-transparent nav-items hover:bg-[#ed1d25] {{ request()->routeIs('home') ? 'text-white active':''}}"
+                                class="block new p-2 w-full rounded-t-lg !text-gray-900 md:bg-transparent nav-items hover:bg-[#ed1d25] {{ request()->routeIs('home') ? 'text-white active':'!text-black'}}"
                                 aria-current="page">@lang('messages.home')</a>
                         </li>
                         <li>
                             <a href="{{ route('about') }}"
-                                class="block new p-2 w-full rounded-t-lg text-gray-900 hover:bg-[#ed1d25] nav-items {{ request()->routeIs('about') ? 'text-white active':''}}">@lang('messages.about')</a>
+                                class="block new p-2 w-full rounded-t-lg !text-gray-900 hover:bg-[#ed1d25] nav-items {{ request()->routeIs('about') ? 'text-white active':'!text-black'}}">@lang('messages.about')</a>
                         </li>
                         <li>
                             <a href="{{ route('pricing') }}"
-                                class="block new p-2 w-full rounded-t-lg text-gray-900  hover:bg-[#ed1d25] nav-items {{ request()->routeIs('pricing') ? 'text-white active':''}}">@lang('messages.pricing')</a>
+                                class="block new p-2 w-full rounded-t-lg !text-gray-900  hover:bg-[#ed1d25] nav-items {{ request()->routeIs('pricing') ? 'text-white active':'!text-black'}}">@lang('messages.pricing')</a>
                         </li>
                         <li>
                             <a href="{{ route('solution') }}"
-                                class="block new p-2 w-full rounded-t-lg text-gray-900 hover:bg-[#ed1d25] nav-items {{ request()->routeIs('solution') ? 'text-white active':''}}">@lang('messages.solution')</a>
+                                class="block new p-2 w-full rounded-t-lg !text-gray-900 hover:bg-[#ed1d25] nav-items {{ request()->routeIs('solution') ? 'text-white active':'!text-black'}}">@lang('messages.solution')</a>
                         </li>
                         <li>
                             <a onclick="onClick()"
-                                class="flex items-center p-2 rounded-t-lg justify-between w-full text-black hover:text-white nav-items {{ request()->routeIs('merchant') ? 'active text-[#ed1d25]':''}}">
+                                class="flex items-center p-2 rounded-t-lg justify-between w-full text-black hover:text-white nav-items {{ request()->routeIs('merchant') ? 'active text-[#ed1d25]':'!text-black'}}">
                                 <div class="flex items-center">
                                     <p>
                                         @lang('messages.our_partner')
@@ -229,11 +229,11 @@
                                 <ul class="py-2 text-sm text-white-700">
                                     <li>
                                         <a href="{{ route('merchant') }}"
-                                            class="block p-3 text-gray-950 nav-link font-semibold nav-items {{ request()->routeIs('merchant') ? 'active text-[#ed1d25]':''}}">@lang('messages.merchant')</a>
+                                            class="block p-3 !text-gray-950 nav-link font-semibold nav-items {{ request()->routeIs('merchant') ? 'active text-[#ed1d25]':'!text-black'}}">@lang('messages.merchant')</a>
                                     </li>
                                     <li>
                                         <a href="{{ route('delivery') }}"
-                                            class="block p-3 text-gray-950 nav-link-1 font-semibold nav-items {{ request()->routeIs('delivery') ? 'active text-[#ed1d25]':''}}">@lang('messages.delivery')</a>
+                                            class="block p-3 !text-gray-950 nav-link-1 font-semibold nav-items {{ request()->routeIs('delivery') ? 'active text-[#ed1d25]':'!text-black'}}">@lang('messages.delivery')</a>
                                     </li>
                                 </ul>
                             </div>
