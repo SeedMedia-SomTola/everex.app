@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMessage;
 use App\Models\Delivery;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
 class DeliveryController extends Controller
@@ -45,6 +46,37 @@ class DeliveryController extends Controller
             "parse_mode" => "HTML",
             "text"=>$text,
         ]);
+
+        // Your AppSheet app details
+        $appId = 'e9bf37d8-62e4-48de-83f1-6f36049041f0'; // Replace with your AppSheet app ID
+        $tableName = 'Delivery'; // Replace with your table name
+        $apiKey = 'V2-9W5Kn-52S2t-zywAS-3XYBD-L3FZX-xMLWc-r7qbr-GHI9B'; // Replace with your AppSheet API key
+
+        // Prepare the data for the API request
+        $data = [
+            'Action' => 'Add',
+            'Properties' => [
+                'Locale' => 'en-US',
+                'Timezone' => 'UTC'
+            ],
+            'Rows' => [
+                [
+                    'First Name' => $request['first_name'],
+                    'Last Name' => $request['last_name'],
+                    'Gender' => $request['gender'],
+                    'Phone Number' => $request['phone_number'],
+                    'Delivery' => $request['delivery_experience'],
+                    'Home Address' => $request['home_address'],
+                    // Add other columns as needed
+                ]
+            ]
+        ];
+
+        // Send the POST request to the AppSheet API
+        Http::withHeaders([
+            'ApplicationAccessKey' => $apiKey
+        ])->post("https://api.appsheet.com/api/v2/apps/{$appId}/tables/{$tableName}/Action", $data);
+
 
         return redirect()->route('deliverys.register')->with('success', 'Delivery Partner Registered Successfully. Please Waiting for Our Team Will Contact You Soon. Thank You For Register!');
     }
