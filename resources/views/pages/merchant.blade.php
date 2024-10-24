@@ -22,10 +22,14 @@
 			<div class="inner p-[2rem] max-sm:flex-wrap justify-center items-center">
 				<div class="w-full max-w-[24rem] mx-auto overflow-x-hidden md:mr-[2rem]">
 					<img src="{{ asset('assets/images/merchant/registration-form-1.jpg') }}" alt="" class="w-full mx-auto object-contain object-center rounded-2xl">
+                    <div class="flex gap-4">
+                        <a href="https://t.me/everexexpress" class="w-full text-center max-w-sm mx-auto px-3 py-2 bg-[#dd0000] mt-5 rounded-2xl text-white">Telegram</a>
+                        <a href="tel:+855 11 900 618" class="w-full text-center max-w-sm mx-auto px-3 py-2 bg-[#dd0000] mt-5 rounded-2xl text-white">Call</a>
+                    </div>
 				</div>
 				<form method="POST" action="{{ route('mercharts.register') }}">
                     @csrf
-					<h3 class="text-white text-[16px] lg:text-[24px] text-center text-wrap my-5 md:mb-5">@lang('messages.merchant')</h3>
+					<h3 class="text-white text-[16px] lg:text-[24px] text-center text-wrap my-5 md:mb-5 ">@lang('messages.merchant')</h3>
                     @component('components.alert')
                     @endcomponent
 
@@ -59,7 +63,6 @@
                         </div>
                     </div>
 					<button class="w-full max-w-sm mx-auto px-3 py-2 bg-[#dd0000] mt-5 rounded-2xl text-white">@lang('messages.btn')
-						<i class="zmdi zmdi-arrow-right"></i>
 					</button>
 				</form>
 			</div>

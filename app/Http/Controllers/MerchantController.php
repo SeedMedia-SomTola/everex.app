@@ -12,11 +12,12 @@ use Telegram\Bot\Laravel\Facades\Telegram;
 
 class MerchantController extends Controller
 {
-    public function index (){
+    public function index (): \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+    {
         return view('pages.merchant');
     }
 
-    public function register(Request $request)
+    public function register(Request $request): \Illuminate\Http\RedirectResponse
     {
         $request->validate([
             'first_name' => 'required',

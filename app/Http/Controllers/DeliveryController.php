@@ -9,11 +9,12 @@ use Telegram\Bot\Laravel\Facades\Telegram;
 
 class DeliveryController extends Controller
 {
-    public function index(){
+    public function index(): \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+    {
         return view('pages.delivery');
     }
 
-    public function deliveryRegister(Request $request)
+    public function deliveryRegister(Request $request): \Illuminate\Http\RedirectResponse
     {
         $request->validate([
             'first_name' => 'required',

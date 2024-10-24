@@ -20,6 +20,10 @@
             <div class="inner p-[2rem] max-sm:flex-wrap">
                 <div class="w-full max-w-[24rem] mx-auto overflow-x-hidden md:mr-[2rem]">
                     <img src="{{ asset('assets/images/delivery/recruitment everex-01.jpg') }}" alt="" class="w-full object-contain object-center rounded-2xl">
+                    <div class="flex gap-4">
+                        <a href="https://t.me/everexexpress" class="w-full text-center max-w-sm mx-auto px-3 py-2 bg-[#dd0000] mt-5 rounded-2xl text-white">Telegram</a>
+                        <a href="tel:+855 11 900 618" class="w-full text-center max-w-sm mx-auto px-3 py-2 bg-[#dd0000] mt-5 rounded-2xl text-white">Call</a>
+                    </div>
                 </div>
                 <form method="POST" action="{{ route('deliverys.register') }}">
                     @csrf
@@ -56,8 +60,8 @@
                             <input type="text" placeholder="@lang('register.home_address')" name="home_address" id="home_address" class="bg-white/50 backdrop-blur-[10px] bg-opacity-65 text-[#ffffff] w-full text-[14px] !outline-none !border-none hover:outline-none focus:!outline-none rounded-xl focus:ring-0" value="{{ old('home_address') }}" autocomplete="off">
                         </div>
                     </div>
-                    <button class="w-full max-w-sm mx-auto px-3 py-2 bg-[#dd0000] mt-5 rounded-2xl text-white">@lang('messages.btn')
-                        <i class="zmdi zmdi-arrow-right"></i>
+                    <button class="w-full max-w-sm mx-auto px-3 py-2 bg-[#dd0000] mt-5 rounded-2xl text-white">
+                        @lang('messages.btn')
                     </button>
                 </form>
             </div>

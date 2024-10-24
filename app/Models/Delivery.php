@@ -17,4 +17,8 @@ class Delivery extends Model
         'delivery_experience',
         'home_address'
     ];
+
+    public static function create(array $array)
+    {
+    }
 }

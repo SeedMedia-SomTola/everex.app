@@ -17,4 +17,8 @@ class Merchant extends Model
         'avg_percel_day',
         'business_address'
     ];
+
+    public static function create(array $array)
+    {
+    }
 }
