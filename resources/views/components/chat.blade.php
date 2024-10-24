@@ -55,7 +55,7 @@
 </style>
 <!-- Message -->
 <div id="popup"
-    class="fixed bottom-24 right-5 bg-[#ec1b23]/60 backdrop-blur-[60px] bg-opacity-100 border shadow-lg p-6 mx-auto max-w-[330px] sm:max-w-sm w-full hidden z-50 rounded-2xl">
+    class="fixed bottom-24 right-5 bg-[#ffffff]/60 backdrop-blur-[60px] bg-opacity-100 border shadow-lg p-6 mx-auto max-w-[330px] sm:max-w-sm w-full hidden z-50 rounded-2xl">
     <div class="border-b">
         <div class="flex justify-between items-center mb-4 pb-2">
             <h2 class="text-[15px] md:text-xl font-semibold tracking-wider text-[#edbeb7]">
@@ -69,7 +69,7 @@
             </button>
         </div>
     </div>
-    <div id="time" class="text-md text-center font-semibold text-white py-2"></div>
+    <div id="time" class="text-md text-center font-semibold text-gray-700 py-2"></div>
     <div class="flex logo_img">
         <img src="{{ url('assets/images/logo/Logo_white.png') }}" alt="logo" class="" width="40">
         <div id="loadingDots" class="flex space-x-2 justify-center items-center bg-white bg-opacity-0 ms-3 mt-3">
@@ -78,7 +78,7 @@
             <div class="h-2 w-2 bg-[#f03a40] rounded-full animate-bounce"></div>
         </div>
     </div>
-    <div id="resultMessage" class="ml-9 px-5 py-3 -mt-2 rounded-2xl text-[12px] md:text-[14px] text-[#ffffff] tracking-wider">
+    <div id="resultMessage" class="ml-9 px-5 py-3 -mt-2 rounded-2xl text-[12px] md:text-[14px] text-gray-700 tracking-wider">
         <p id="resultMessageOne" class="result-message"></p>
         <p id="resultMessageTwo" class="result-message"></p>
     </div>
