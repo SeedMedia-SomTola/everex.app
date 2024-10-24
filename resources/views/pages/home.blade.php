@@ -7,7 +7,7 @@
 
         .swiper_banner {
             width: 100%;
-            height: 56vh;
+            height: 100%;
             overflow-x:hidden;
         }
 
@@ -24,7 +24,7 @@
             display: block;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain !important;
         }
         .swiper-pagination-bullet{
             width: 20px !important;
@@ -48,19 +48,19 @@
 @section('content')
     <section class="hero max-sm:p-3 mt-[3.5rem] md:mt-[6rem]">
         <!-- Swiper -->
-        <div class="swiper_banner mySwiper_banner max-sm:!h-[26vh]">
+        <div class="swiper_banner mySwiper_banner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide max-sm:!rounded-2xl !bg-[#ec1b23]/30">
-                        <h1 class="p-[2rem]">Coming Soon</h1>
-{{--                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">--}}
+{{--                        <h1 class="p-[2rem]">Coming Soon</h1>--}}
+                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl">
                 </div>
                 <div class="swiper-slide max-sm:!rounded-2xl !bg-[#ec1b23]/30">
-                    <h1 class="p-[2rem]">Coming Soon</h1>
-{{--                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">--}}
+{{--                    <h1 class="p-[2rem]">Coming Soon</h1>--}}
+                    <img src="{{url('assets/images/slide_1_2.png')}}" alt="" class="max-sm:!rounded-2xl">
                 </div>
                 <div class="swiper-slide max-sm:!rounded-2xl !bg-[#ec1b23]/30">
-                    <h1 class="p-[2rem]">Coming Soon</h1>
-{{--                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl object-contain object-center">--}}
+{{--                    <h1 class="p-[2rem]">Coming Soon</h1>--}}
+                    <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -77,9 +77,9 @@
 
     <div class="w-full max-w-screen-xl mx-auto px-5 overflow-x-hidden">
         <div data-aos="fade-left" class="grid grid-cols-12 justify-center gap-[1vw]">
-            <div class="col-span-12 md:col-span-6 bg-[#ec1b23]/60 flex flex-col justify-center items-center w-full h-[289px] xl:h-[389px] rounded-2xl">
-                <h1 class="text-center text-white font-semibold text-[20px]">Coming Soon</h1>
-{{--                <img data-aos="fade-right" class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/sdd.jpg')}}" alt="">--}}
+            <div class="col-span-12 md:col-span-6 bg-[#ec1b23]/60 flex flex-col justify-center items-center rounded-2xl">
+{{--                <h1 class="text-center text-white font-semibold text-[20px]">Coming Soon</h1>--}}
+                <img class="object-contain object-center w-full rounded-2xl" src="{{url('assets/images/sdd.jpg')}}" alt="">
             </div>
 
             <div class="col-span-12 md:col-span-6 max-sm:flex max-sm:flex-col max-sm:gap-[1vw]">
