@@ -53,7 +53,7 @@
                 <div class="swiper-slide max-sm:!rounded-2xl !bg-[#ec1b23]/30">
 {{--                        <h1 class="p-[2rem]">Coming Soon</h1>--}}
                     <img src="{{url('assets/images/slide_1_1.jpg')}}" alt="" class="max-sm:!rounded-2xl !block max-sm:!hidden">
-                    <img src="{{url('assets/images/slide_1_2.jpg')}}" alt="" class="max-sm:!rounded-2xl !hidden max-sm:!block">
+                    <img src="{{url('assets/images/slide_1_2.png')}}" alt="" class="max-sm:!rounded-2xl !hidden max-sm:!block">
                 </div>
                 <div class="swiper-slide max-sm:!rounded-2xl !bg-[#ec1b23]/30">
 {{--                    <h1 class="p-[2rem]">Coming Soon</h1>--}}
